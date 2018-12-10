@@ -1,0 +1,38 @@
+.content .box .btn input{float:left;}
+.content .box .btn input[type=text]{width:250px;height:40px;border:1px solid #ccc;border-right:0;border-top-left-radius:3px;border-bottom-left-radius:3px;padding-left:10px;background:#fafafa;font-size:14px;}
+.content .box .btn input[type=submit]{width:100px;height:40px;background:#1890ff url(../images/icon_inquire.png)no-repeat 18px center;font-size:16px;color:#FFF;border-top-right-radius:3px;border-bottom-right-radius:3px;padding-left:40px;text-align:left;cursor:pointer;}
+
+.content .box .recording .title .id,.content .box .recording .list .id{width:52px;}
+.content .box .recording .title .user,.content .box .recording .list .user{width:115px;}
+.content .box .recording .list .log{width:500px;overflow: hidden;  text-overflow:ellipsis;  white-space: nowrap;}
+
+
+
+@media only screen and (max-width: 1366px) {
+
+    .content .box .btn input[type=text],
+    .content .box .btn input[type=submit]{height: 30px;line-height: 28px;font-size: 14px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

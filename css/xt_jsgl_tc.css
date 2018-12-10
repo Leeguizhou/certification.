@@ -1,0 +1,36 @@
+.pop_ups{width:700px;height:auto;background:#fff;border-radius:3px;margin:100px auto 0;padding-bottom:20px;}
+.pop_ups .pop_top{width:100%;height:51px;border-bottom:1px solid #ececec;line-height:50px;}
+.pop_ups .pop_top .name{font-size:16px;color:#333;font-weight:bold;margin-left:20px;}
+.pop_ups .pop_top .btn{display:block;float:right;width:16px;height:16px;background:url(../images/icon_close_1.png)no-repeat center/cover;margin:20px 20px 0 0;}
+
+.pop_ups .pop_center{padding-top:22px;}
+.pop_ups .pop_center ul li{width:100%;height:auto;margin-bottom:15px;}
+.pop_ups .pop_center ul li>div{float:left;}
+.pop_ups .pop_center ul li .manner{width:120px;height:34px;line-height:34px;text-align:right;margin-right:25px;font-size:16px;color:#333;}
+.pop_ups .pop_center ul li:not(:last-child) .select input{width:500px;height:34px;border:1px solid #ccc;border-radius:3px;font-size:15px;color:#999;line-height:32px;padding-left:15px;}
+.pop_ups .pop_center ul li:last-child .select{padding-top:10px;}
+.pop_ups .pop_center ul li:last-child .select input{width:14px;height:14px;vertical-align: middle;margin-right:10px;}
+.pop_ups .pop_center ul li:last-child .select label{font-size:15px;color:#333;margin-right:20px;}
+
+
+
+.pop_ups .pop_bottom{width:100%;height:auto;border-top:1px solid #e5e5e5;margin-top:45px;padding-top:20px;}
+.pop_ups .pop_bottom a{float:right;width:96px;height:36px;font-size:16px;color:#fff;letter-spacing:5px;text-align:center;line-height:36px;border-radius:3px;padding-left:5px;}
+.pop_ups .pop_bottom a:first-child{background:#1c84c6;margin:0 20px 0 15px;}
+.pop_ups .pop_bottom a:last-child{background:#c2c2c2;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

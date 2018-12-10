@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>系统_系统权限管理_弹窗</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/xt_jsgl_tc.css">
+    <style>
+        body{background:#005fe9;}
+        .pop_ups .pop_center ul li:first-child .select{padding-top:10px;}
+        .pop_ups .pop_center ul li:first-child .select input{width:14px;height:14px;vertical-align: middle;margin-right: 10px;}
+        .pop_ups .pop_center ul li:first-child .select label{font-size: 15px;color: #333;margin-right: 20px;}
+    </style>
+</head>
+<body>
+<div class="pop_ups">
+    <div class="clf pop_top">
+        <span class="name">添加权限</span>
+        <a href="#" class="btn"></a>
+    </div>
+    <form action="">
+        <div class="pop_center">
+            <ul>
+                <li class="clf">
+                    <div class="manner">类型</div>
+                    <div class="select">
+                        <input type="radio" name="radio1" checked="checked" id="f3"><label for="f3">目录</label>
+                        <input type="radio" name="radio1" id="f4"><label for="f4">菜单</label>
+                        <input type="radio" name="radio1" id="f5"><label for="f5">按钮</label>
+                    </div>
+                </li>
+                <li class="clf">
+                    <div class="manner">权限名称</div>
+                    <div class="select">
+                        <input type="text" placeholder="请输入提示信息">
+                    </div>
+                </li>
+                <li class="clf">
+                    <div class="manner">图标</div>
+                    <div class="select">
+                        <input type="text" placeholder="请输入提示信息">
+                    </div>
+                </li>
+                <li class="clf">
+                    <div class="manner">排序</div>
+                    <div class="select">
+                        <input type="text" placeholder="请输入提示信息">
+                    </div>
+                </li>
+                <li class="clf">
+                    <div class="manner">权限编码</div>
+                    <div class="select">
+                        <input type="text" placeholder="请输入提示信息">
+                    </div>
+                </li>
+                <li class="clf">
+                    <div class="manner">url</div>
+                    <div class="select">
+                        <input type="text" placeholder="请输入提示信息">
+                    </div>
+                </li>
+                <li class="clf">
+                    <div class="manner">描述</div>
+                    <div class="select">
+                        <input type="text" placeholder="请输入提示信息">
+                    </div>
+                </li>
+                <li class="clf">
+                    <div class="manner">状态</div>
+                    <div class="select">
+                        <input type="radio" name="radio" checked="checked" id="f1"><label for="f1">启用</label>
+                        <input type="radio" name="radio" id="f2"><label for="f2">禁用</label>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="clf pop_bottom">
+            <a href="#">提交</a>
+            <a href="#">关闭</a>
+        </div>
+    </form>
+
+
+</div>
+</body>
+</html>

@@ -1,0 +1,63 @@
+body{width:100%;height:100%;background:url(../images/login_bk.jpg)no-repeat top center/cover;padding-top:160px;}
+
+.box{width:1128px;height:529px;background:url(../images/login_box.png)no-repeat;margin:auto;}
+.box>div{float:left;}
+.box .left{margin:50px 80px 0 100px;}
+.box .line{width:3px;height:396px;background:url(../images/login_line.png)no-repeat;margin-top:40px;}
+.box .right{width:326px;height:auto;margin:80px 0 0 90px;}
+.box .right .title{font-size:20px;color:#2551ff;text-align:center;font-weight:bold;}
+.box .right .account{padding-top:18px;}
+.box .right .account input{width:100%;height:42px;border-bottom:1px solid #c0c0c0;line-height:41px;padding-left:54px;font-size:14px;margin-top:20px;}
+.box .right .account input[type=text]{background:url(../images/icon_login_user.png)no-repeat 13px center;}
+.box .right .account input[type=password]{background:url(../images/icon_login_password.png)no-repeat 13px center;}
+.box .right .account button,.registered ul li:last-child button{width:100%;height:42px;border-radius:3px;background:#005fe9;margin-top:32px;font-size:16px;color:#fff;text-align:center;line-height:42px;letter-spacing:10px;font-weight:bold;}
+.box .right .entrance{margin:30px 0;text-align:center;}
+.box .right .entrance a{font-size:14px;color:#6c6c6c;margin-right:20px;}
+.box .right .entrance a:last-child{margin-right:0;}
+.box .right .download .top span{display:block;float:left;}
+.box .right .download .top .d_line{width:40%;height:1px;background:#ccc;margin-top:8px;}
+.box .right .download .top .or{width:20%;text-align:center;}
+.box .right .download div:last-child{width:100%;text-align:center;margin-top:30px;}
+.box .right .download div:last-child a{font-size:15px;color:#005fe9;border-bottom:1px solid #005fe9;}
+
+/*注册页面*/
+.registered ul li{width:100%;height:auto;margin-top:20px;}
+.registered ul li input{width:100%;height:42px;border-bottom:1px solid #c0c0c0;line-height:41px;padding-left:54px;font-size:14px;}
+.registered ul li:first-child input{background:url(../images/icon_phone.png)no-repeat 13px center;}
+.registered ul li:nth-child(2) input{background:url(../images/icon_safety.png)no-repeat 13px center;}
+.registered ul li:nth-child(3) input{background:url(../images/icon_login_password.png)no-repeat 13px center;}
+.registered ul li:nth-child(4) input{background:url(../images/icon_login_password.png)no-repeat 13px center;}
+.registered ul li:nth-child(2){position:relative;}
+.registered ul li:nth-child(2) a{position:absolute;right:0;top:50%;font-size:14px;color:#005fe9;text-decoration:underline;transform:translateY(-50%);}
+
+
+.total{margin-top:150px;}
+.total span{color:#000;}
+
+
+
+@media only screen and (max-width: 1600px) {
+
+    body{padding-top: 100px;}
+    .total{margin-top: 8rem;}
+
+
+
+
+
+
+}
+
+@media only screen and (max-width: 1366px) {
+
+    body{padding-top: 50px;}
+    .total{margin-top: 4rem;}
+
+
+
+
+
+
+
+
+}

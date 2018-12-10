@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>系统_系统权限管理</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/log.css">
+    <link rel="stylesheet" href="css/xt_xtqxgl.css">
+</head>
+<body>
+<div class="header">
+    <div class="w">
+        <ul class="nav_l fl clf">
+            <li><a href="index.html">首页</a></li>
+            <li><a href="personal.html">个人信息</a></li>
+            <li><a href="operation_log.html">操作日志</a></li>
+        </ul>
+        <a href="javascript:" class="nav_c">认证中心</a>
+        <ul class="nav_r fr clf">
+            <li>
+                <a href="javascript:">业务管理</a>
+                <div class="pull-down">
+                    <div class="w">
+                        <ul>
+                            <li><a href="gzt_yhcx.html">用户查询</a></li>
+                            <li><a href="gzt_yhsz.html">用户管理</a></li>
+                            <li><a href="gzt_yhsp.html">用户审批</a></li>
+                            <li><a href="gzt_pljz.html">批量鉴证</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <a href="javascript:">系统管理</a>
+                <div class="pull-down">
+                    <div class="w">
+                        <ul>
+                            <li><a href="xt_ywxtgl.html">业务系统管理</a></li>
+                            <li><a href="xt_syyhlb.html">所有用户列表</a></li>
+                            <li><a href="xt_crgl.html">策略管理</a></li>
+                            <li><a href="xt_crmbgl.html">策略模版管理</a></li>
+                            <li><a href="xt_zzjggl.html">组织架构管理</a></li>
+                            <li><a href="xt_jsgl.html">角色管理</a></li>
+                            <li><a href="xt_xtqxgl.html">系统权限管理</a></li>
+                            <li><a href="xt_sjzd.html">数据字典</a></li>
+                            <li><a href="xt_rzbb.html">日志报表</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li><a href="#">退出</a></li>
+        </ul>
+    </div>
+</div>
+
+<div class="w time"><span class="yel">2018-02-01</span><span>13:32:04</span></div>
+<div class="w content">
+    <div class="position"><a href="#">认证中心 > </a><a href="#">工作台 > </a> <span>用户管理</span></div>
+
+    <div class="box">
+        <div class="clf btn">
+            <div class="fl add"><a href="#" id="addAuthorityBtn">添加</a></div>
+            <div class="fl modify"><a href="#" id="editAuthorityBtn">修改</a></div>
+            <div class="fl delete"><a href="#">删除</a></div>
+        </div>
+        <div class="recording">
+            <div class="clf title">
+                <input type="checkbox" class="fl">
+                <div class="fl id">ID</div>
+                <div class="fl x_name">权限名称</div>
+                <div class="fl img">图标</div>
+                <div class="fl type">类型</div>
+                <div class="fl sorting">排序号</div>
+                <div class="fl url">权限URL</div>
+                <div class="fl coding">权限编码</div>
+                <div class="fl status">状态</div>
+                <div class="fl create_time">创建时间</div>
+            </div>
+            <ul class="list">
+                <li class="clf">
+                    <input type="checkbox" class="fl">
+                    <div class="fl id">20</div>
+                    <div class="fl x_name"> >系统管理 </div>
+                    <div class="fl img"><img src="images/icon_settings.png" alt=""></div>
+                    <div class="fl type"><a href="#">目录</a> </div>
+                    <div class="fl sorting">1</div>
+                    <div class="fl url">as</div>
+                    <div class="fl coding">swqe </div>
+                    <div class="fl status"><a href="#">启用</a></div>
+                    <div class="fl create_time">2017-12-01 07:37:29 </div>
+                </li>
+
+                <li class="clf">
+                    <input type="checkbox" class="fl">
+                    <div class="fl id">20</div>
+                    <div class="fl x_name"> >系统管理 </div>
+                    <div class="fl img"><img src="images/icon_settings.png" alt=""></div>
+                    <div class="fl type"><a href="#">目录</a> </div>
+                    <div class="fl sorting">1</div>
+                    <div class="fl url">as</div>
+                    <div class="fl coding">swqe </div>
+                    <div class="fl status"><a href="#">启用</a></div>
+                    <div class="fl create_time">2017-12-01 07:37:29 </div>
+                </li>
+            </ul>
+        </div>
+        <div class="clf page">
+            <div class="fl">显示第 1 到第 <span>8</span> 条记录，总共 <span>14</span> 条记录每页显示 <span class="sp3">8</span> 条记录</div>
+            <div class="fr">
+                <a href="#"> < </a>
+                <a href="#"> 1 </a>
+                <a href="#"> 2 </a>
+                <a href="#"> > </a>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="w total">
+        <span>今日访问量：<i>2343083</i></span>
+        <span>总访问量：<i>876384240 </i></span>
+        <span>版权所有：<i>认证中心 </i></span>
+    </div>
+</div>
+
+<div class="shade" id="addAuthorityPopup">
+    <div class="popup pop_ups">
+        <div class="clf pop_top">
+            <span class="name">添加权限</span>
+            <a href="#" class="btn" id="closeAddAuthorityPopup"></a>
+        </div>
+        <form action="" onsubmit="return f1_check('1')">
+            <div class="pop_center">
+                <ul>
+                    <li class="clf">
+                        <div class="manner">类型</div>
+                        <div class="select">
+                            <input type="radio" name="radio1" checked="checked" id="f3"><label for="f3">目录</label>
+                            <input type="radio" name="radio1" id="f4"><label for="f4">菜单</label>
+                            <input type="radio" name="radio1" id="f5"><label for="f5">按钮</label>
+                        </div>
+                    </li>
+                    <li class="clf">
+                        <div class="manner">权限名称</div>
+                        <div class="select">
+                            <input type="text" placeholder="请输入权限名称" id="authorityName_1">
+                        </div>
+                    </li>
+                    <li class="clf">
+                        <div class="manner">图标</div>
+                        <div class="select">
+                            <input type="text" placeholder="请输入图标" id="icon_1">
+                        </div>
+                    </li>
+                    <li class="clf">
+                        <div class="manner">排序</div>
+                        <div class="select">
+                            <input type="text" placeholder="请输入排序" id="rank_1">
+                        </div>
+                    </li>
+                    <li class="clf">
+                        <div class="manner">权限编码</div>
+                        <div class="select">
+                            <input type="text" placeholder="请输入权限编码" id="coding_1">
+                        </div>
+                    </li>
+                    <li class="clf">
+                        <div class="manner">url</div>
+                        <div class="select">
+                            <input type="text" placeholder="请输入url" id="url_1">
+                        </div>
+                    </li>
+                    <li class="clf">
+                        <div class="manner">描述</div>
+                        <div class="select">
+                            <input type="text" placeholder="请输入描述" id="describe_1">
+                        </div>
+                    </li>
+                    <li class="clf">
+                        <div class="manner">状态</div>
+                        <div class="select">
+                            <input type="radio" name="radio" checked="checked" id="f1"><label for="f1">启用</label>
+                            <input type="radio" name="radio" id="f2"><label for="f2">禁用</label>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="clf pop_bottom">
+                <button type="submit">提交</button>
+                <button>关闭</button>
+            </div>
+        </form>
+
+
+    </div>
+</div>
+<div class="shade" id="editauthorityPopup">
+    <div class="popup pop_ups">
+        <div class="clf pop_top">
+            <span class="name">修改权限</span>
+            <a href="#" class="btn" id="closeEditAuthorityPopup"></a>
+        </div>
+        <form action="" onsubmit="return f1_check('2')">
+            <div class="pop_center">
+                <ul>
+                    <li class="clf">
+                        <div class="manner">类型</div>
+                        <div class="select">
+                            <input type="radio" name="radio1" checked="checked" id="f6"><label for="f6">目录</label>
+                            <input type="radio" name="radio1" id="f7"><label for="f7">菜单</label>
+                            <input type="radio" name="radio1" id="f8"><label for="f8">按钮</label>
+                        </div>
+                    </li>
+                    <li class="clf">
+                        <div class="manner">权限名称</div>
+                        <div class="select">
+                            <input type="text" placeholder="请输入权限名称" id="authorityName_2">
+                        </div>
+                    </li>
+                    <li class="clf">
+                        <div class="manner">图标</div>
+                        <div class="select">
+                            <input type="text" placeholder="请输入图标" id="icon_2">
+                        </div>
+                    </li>
+                    <li class="clf">
+                        <div class="manner">排序</div>
+                        <div class="select">
+                            <input type="text" placeholder="请输入排序" id="rank_2">
+                        </div>
+                    </li>
+                    <li class="clf">
+                        <div class="manner">权限编码</div>
+                        <div class="select">
+                            <input type="text" placeholder="请输入权限编码" id="coding_2">
+                        </div>
+                    </li>
+                    <li class="clf">
+                        <div class="manner">url</div>
+                        <div class="select">
+                            <input type="text" placeholder="请输入url" id="url_2">
+                        </div>
+                    </li>
+                    <li class="clf">
+                        <div class="manner">描述</div>
+                        <div class="select">
+                            <input type="text" placeholder="请输入描述" id="describe_2">
+                        </div>
+                    </li>
+                    <li class="clf">
+                        <div class="manner">状态</div>
+                        <div class="select">
+                            <input type="radio" name="radio" checked="checked" id="f9"><label for="f9">启用</label>
+                            <input type="radio" name="radio" id="f10"><label for="f10">禁用</label>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="clf pop_bottom">
+                <button type="submit">提交</button>
+                <button>关闭</button>
+            </div>
+        </form>
+
+
+    </div>
+</div>
+<script src="js/jquery.min.js"></script>
+<script src="js/base.js"></script>
+<script>
+    function f1_check(val) {
+
+        // 获取表单中id为name的元素的value值
+        var authorityName = document.getElementById("authorityName_" + val).value;
+        var icon = document.getElementById("icon_" + val).value;
+        var rank = document.getElementById("rank_" + val).value;
+        var coding = document.getElementById("coding_" + val).value;
+        var url = document.getElementById("url_" + val).value;
+        var describe = document.getElementById("describe_" + val).value;
+
+        if (authorityName === "") {
+            alert("请输入权限名称");
+            return false;
+        }
+
+        if (icon === "") {
+            alert("请输入图标");
+            return false;
+        }
+
+        if (rank === "") {
+            alert("请输入排序");
+            return false;
+        }
+
+        if (coding === "") {
+            alert("请输入权限编码");
+            return false;
+        }
+
+        if (url === "") {
+            alert("请输入url");
+            return false;
+        }
+
+        if (describe === "") {
+            alert("请输入描述");
+            return false;
+        }
+
+    }
+</script>
+</body>
+</html>

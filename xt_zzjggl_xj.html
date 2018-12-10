@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>系统_组织架构管理</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/log.css">
+    <link rel="stylesheet" href="css/xt_zzjggl.css">
+</head>
+<body>
+<div class="header">
+    <div class="w">
+        <ul class="nav_l fl clf">
+            <li><a href="index.html">首页</a></li>
+            <li><a href="personal.html">个人信息</a></li>
+            <li><a href="operation_log.html">操作日志</a></li>
+        </ul>
+        <a href="javascript:" class="nav_c">认证中心</a>
+        <ul class="nav_r fr clf">
+            <li>
+                <a href="javascript:">业务管理</a>
+                <div class="pull-down">
+                    <div class="w">
+                        <ul>
+                            <li><a href="gzt_yhcx.html">用户查询</a></li>
+                            <li><a href="gzt_yhsz.html">用户管理</a></li>
+                            <li><a href="gzt_yhsp.html">用户审批</a></li>
+                            <li><a href="gzt_pljz.html">批量鉴证</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <a href="javascript:">系统管理</a>
+                <div class="pull-down">
+                    <div class="w">
+                        <ul>
+                            <li><a href="xt_ywxtgl.html">业务系统管理</a></li>
+                            <li><a href="xt_syyhlb.html">所有用户列表</a></li>
+                            <li><a href="xt_crgl.html">策略管理</a></li>
+                            <li><a href="xt_crmbgl.html">策略模版管理</a></li>
+                            <li><a href="xt_zzjggl.html">组织架构管理</a></li>
+                            <li><a href="xt_jsgl.html">角色管理</a></li>
+                            <li><a href="xt_xtqxgl.html">系统权限管理</a></li>
+                            <li><a href="xt_sjzd.html">数据字典</a></li>
+                            <li><a href="xt_rzbb.html">日志报表</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li><a href="#">退出</a></li>
+        </ul>
+    </div>
+</div>
+
+<div class="w time"><span class="yel">2018-02-01</span><span>13:32:04</span></div>
+<div class="w content">
+    <div class="position"><a href="#">认证中心 > </a><a href="#">工作台 > </a> <span>用户管理</span></div>
+
+    <div class="box">
+        <div class="subordin">公安部 / 北京市</div>
+        <div class="clf btn">
+            <div class="fl add"><a href="#" id="addOrganizBtn">添加</a></div>
+            <div class="fl modify"><a href="#" id="editOrganizBtn">修改</a></div>
+            <div class="fl authority"><a href="#">查看下级</a></div>
+            <div class="fl authority"><a href="#" id="showDescTableBtn">查看结构</a></div>
+            <div class="fl delete"><a href="#">删除</a></div>
+        </div>
+        <div class="recording">
+            <div class="clf title">
+                <input type="checkbox" class="fl">
+                <div class="fl id">ID</div>
+                <div class="fl name">名称</div>
+                <div class="fl type">类别</div>
+
+            </div>
+            <ul class="list">
+                <li class="clf">
+                    <input type="checkbox" class="fl">
+                    <div class="fl id">18</div>
+                    <div class="fl name">北京市 </div>
+                    <div class="fl type">省级</div>
+                </li>
+
+            </ul>
+        </div>
+        <div class="clf page">
+            <div class="fl">显示第 1 到第 <span>8</span> 条记录，总共 <span>14</span> 条记录每页显示 <span class="sp3">8</span> 条记录</div>
+            <div class="fr">
+                <a href="#"> < </a>
+                <a href="#"> 1 </a>
+                <a href="#"> 2 </a>
+                <a href="#"> > </a>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="w total">
+        <span>今日访问量：<i>2343083</i></span>
+        <span>总访问量：<i>876384240 </i></span>
+        <span>版权所有：<i>认证中心 </i></span>
+    </div>
+</div>
+<div class="shade" id="addOrganizPopup">
+    <div class="popup pop_ups">
+        <div class="clf pop_top">
+            <span class="name">添加组织</span>
+            <a href="#" class="btn" id="closeAddOrganizPopup"></a>
+        </div>
+        <form action="" onsubmit="return f1_check('1')">
+            <div class="pop_center">
+                <ul>
+                    <li class="clf">
+                        <div class="manner">组织名称</div>
+                        <div class="select">
+                            <input type="text" placeholder="请输入组织名称" id="organizName_1">
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="clf pop_bottom">
+                <button type="submit">提交</button>
+                <button>关闭</button>
+            </div>
+        </form>
+
+
+    </div>
+</div>
+<div class="shade" id="editOrganizPopup">
+    <div class="popup pop_ups">
+        <div class="clf pop_top">
+            <span class="name">修改名称</span>
+            <a href="#" class="btn" id="closeEditOrganizPopup"></a>
+        </div>
+        <form action="" onsubmit="return f1_check('2')">
+            <div class="pop_center">
+                <ul>
+                    <li class="clf">
+                        <div class="manner">名称</div>
+                        <div class="select">
+                            <input type="text" placeholder="请输入名称" id="organizName_1">
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="clf pop_bottom">
+                <button type="submit">提交</button>
+                <button>关闭</button>
+            </div>
+        </form>
+
+
+    </div>
+</div>
+<div class="shade" id="descTable">
+    <div class="popup pop_ups">
+        <div class="clf pop_top">
+            <span class="name">查看结构</span>
+            <a href="#" class="btn" id="closeDescTable"></a>
+        </div>
+
+        <div class="privilegesDiv" id="privilegesDiv">
+            <ul>
+                <li>
+                    <p class="menuLevel">
+                        <span class="absToggle show"></span>
+                        <label>公安部</label>
+                    </p>
+                    <ul>
+                        <li><p><label>膝盖村</label></p></li>
+                        <li><p><label>康佳洼村</label></p></li>
+                        <li><p><label>圣佛堂村</label></p></li>
+                        <li><p><label>东盖村</label></p></li>
+                        <li><p><label>第什营乡</label></p></li>
+                    </ul>
+                </li>
+                <li>
+                    <p class="menuLevel">
+                        <span class="absToggle show"></span>
+                        <label>安庆第一支队</label>
+                    </p>
+                    <ul>
+                        <li><p><label>膝盖村222</label></p></li>
+                        <li><p><label>康佳洼村222</label></p></li>
+                        <li><p><label>圣佛堂村222</label></p></li>
+                        <li><p><label>东盖村222</label></p></li>
+                        <li><p><label>第什营乡222</label></p></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="clf pop_bottom">
+            <button type="submit">提交</button>
+            <button>关闭</button>
+        </div>
+
+    </div>
+</div>
+<script src="js/jquery.min.js"></script>
+<script src="js/base.js"></script>
+</body>
+</html>

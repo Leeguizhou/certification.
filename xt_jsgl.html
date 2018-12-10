@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>系统_角色管理</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/log.css">
+    <link rel="stylesheet" href="css/xt_jsgl.css">
+</head>
+<body>
+<div class="header">
+    <div class="w">
+        <ul class="nav_l fl clf">
+            <li><a href="index.html">首页</a></li>
+            <li><a href="personal.html">个人信息</a></li>
+            <li><a href="operation_log.html">操作日志</a></li>
+        </ul>
+        <a href="javascript:" class="nav_c">认证中心</a>
+        <ul class="nav_r fr clf">
+            <li>
+                <a href="javascript:">业务管理</a>
+                <div class="pull-down">
+                    <div class="w">
+                        <ul>
+                            <li><a href="gzt_yhcx.html">用户查询</a></li>
+                            <li><a href="gzt_yhsz.html">用户管理</a></li>
+                            <li><a href="gzt_yhsp.html">用户审批</a></li>
+                            <li><a href="gzt_pljz.html">批量鉴证</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <a href="javascript:">系统管理</a>
+                <div class="pull-down">
+                    <div class="w">
+                        <ul>
+                            <li><a href="xt_ywxtgl.html">业务系统管理</a></li>
+                            <li><a href="xt_syyhlb.html">所有用户列表</a></li>
+                            <li><a href="xt_crgl.html">策略管理</a></li>
+                            <li><a href="xt_crmbgl.html">策略模版管理</a></li>
+                            <li><a href="xt_zzjggl.html">组织架构管理</a></li>
+                            <li><a href="xt_jsgl.html">角色管理</a></li>
+                            <li><a href="xt_xtqxgl.html">系统权限管理</a></li>
+                            <li><a href="xt_sjzd.html">数据字典</a></li>
+                            <li><a href="xt_rzbb.html">日志报表</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li><a href="#">退出</a></li>
+        </ul>
+    </div>
+</div>
+
+<div class="w time"><span class="yel">2018-02-01</span><span>13:32:04</span></div>
+<div class="w content">
+    <div class="position"><a href="#">认证中心 > </a><a href="#">工作台 > </a> <span>用户管理</span></div>
+
+    <div class="box">
+        <div class="clf btn">
+            <div class="fl add"><a href="#" id="addRoleBtn">添加</a></div>
+            <div class="fl modify"><a href="#" id="editRoleBtn">修改</a></div>
+            <div class="fl authority"><a href="#" id="showPrivilegesBtn">分配权限</a></div>
+            <div class="fl delete"><a href="#">删除</a></div>
+        </div>
+        <div class="recording">
+            <div class="clf title">
+                <input type="checkbox" class="fl">
+                <div class="fl id">ID</div>
+                <div class="fl character">角色名</div>
+                <div class="fl sorting">排序</div>
+                <div class="fl description">描述</div>
+                <div class="fl status">状态</div>
+                <div class="fl create_time">创建时间</div>
+            </div>
+            <ul class="list">
+                <li class="clf">
+                    <input type="checkbox" class="fl">
+                    <div class="fl id">18</div>
+                    <div class="fl character">超级管理员 </div>
+                    <div class="fl sorting">109</div>
+                    <div class="fl description">超级管理员 </div>
+                    <div class="fl status"><a href="#">启用</a></div>
+                    <div class="fl create_time">2018-01-11 10:25:27</div>
+                </li>
+                <li class="clf">
+                    <input type="checkbox" class="fl">
+                    <div class="fl id">18</div>
+                    <div class="fl character">超级管理员 </div>
+                    <div class="fl sorting">109</div>
+                    <div class="fl description">超级管理员 </div>
+                    <div class="fl status"><a href="#">启用</a></div>
+                    <div class="fl create_time">2018-01-11 10:25:27</div>
+                </li>
+
+            </ul>
+        </div>
+        <div class="clf page">
+            <div class="fl">显示第 1 到第 <span>8</span> 条记录，总共 <span>14</span> 条记录每页显示 <span class="sp3">8</span> 条记录</div>
+            <div class="fr">
+                <a href="#"> < </a>
+                <a href="#"> 1 </a>
+                <a href="#"> 2 </a>
+                <a href="#"> > </a>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="w total">
+        <span>今日访问量：<i>2343083</i></span>
+        <span>总访问量：<i>876384240 </i></span>
+        <span>版权所有：<i>认证中心 </i></span>
+    </div>
+</div>
+
+<div class="shade" id="addRolePopup">
+    <div class="popup pop_ups">
+        <div class="clf pop_top">
+            <span class="name">添加角色</span>
+            <a href="#" class="btn" id="closeAddRolePopup"></a>
+        </div>
+        <form action="" onsubmit="return f1_check('1')">
+            <div class="pop_center">
+                <ul>
+                    <li class="clf">
+                        <div class="manner">角色名</div>
+                        <div class="select">
+                            <input type="text" placeholder="请输入角色名" id="roleName_1">
+                        </div>
+                    </li>
+                    <li class="clf">
+                        <div class="manner">排序</div>
+                        <div class="select">
+                            <input type="text" placeholder="请输入排序" id="rank_1">
+                        </div>
+                    </li>
+                    <li class="clf">
+                        <div class="manner">描述</div>
+                        <div class="select">
+                            <input type="text" placeholder="请输入描述" id="describe_1">
+                        </div>
+                    </li>
+                    <li class="clf">
+                        <div class="manner">状态</div>
+                        <div class="select">
+                            <input type="radio" name="radio" checked="checked" id="f1"><label for="f1">启用</label>
+                            <input type="radio" name="radio" id="f2"><label for="f2">禁用</label>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="clf pop_bottom">
+                <button type="submit">提交</button>
+                <button>关闭</button>
+            </div>
+        </form>
+
+
+    </div>
+</div>
+<div class="shade" id="editRolePopup">
+    <div class="popup pop_ups">
+        <div class="clf pop_top">
+            <span class="name">修改角色</span>
+            <a href="#" class="btn" id="closeEditRolePopup"></a>
+        </div>
+        <form action="" onsubmit="return f1_check('2')">
+            <div class="pop_center">
+                <ul>
+                    <li class="clf">
+                        <div class="manner">角色名</div>
+                        <div class="select">
+                            <input type="text" placeholder="请输入角色名" id="roleName_2">
+                        </div>
+                    </li>
+                    <li class="clf">
+                        <div class="manner">排序</div>
+                        <div class="select">
+                            <input type="text" placeholder="请输入排序" id="rank_2">
+                        </div>
+                    </li>
+                    <li class="clf">
+                        <div class="manner">描述</div>
+                        <div class="select">
+                            <input type="text" placeholder="请输入描述" id="describe_2">
+                        </div>
+                    </li>
+                    <li class="clf">
+                        <div class="manner">状态</div>
+                        <div class="select">
+                            <input type="radio" name="radio" checked="checked" id="f3"><label for="f3">启用</label>
+                            <input type="radio" name="radio" id="f4"><label for="f4">禁用</label>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="clf pop_bottom">
+                <button type="submit">提交</button>
+                <button>关闭</button>
+            </div>
+        </form>
+
+
+    </div>
+</div>
+<div class="shade" id="privilegesPopup">
+    <div class="popup pop_ups">
+        <div class="clf pop_top">
+            <span class="name">分配权限</span>
+            <a href="#" class="btn" id="closePrivilegesPopup"></a>
+        </div>
+
+        <div class="privilegesDiv" id="privilegesDiv">
+            <ul>
+                <li>
+                    <p class="menuLevel">
+                        <span class="absToggle show"></span>
+                        <label><input type="checkbox">系统管理</label>
+                    </p>
+                    <ul>
+                        <li><p><label><input type="checkbox">报表管理</label></p></li>
+                        <li><p><label><input type="checkbox">字典管理</label></p></li>
+                        <li>
+                            <p class="menuLevel">
+                                <span class="absToggle show"></span>
+                                <label><input type="checkbox">用户管理</label>
+                            </p>
+                            <ul>
+                                <li><p><label><input type="checkbox">添加用户</label></p></li>
+                                <li><p><label><input type="checkbox">修改用户</label></p></li>
+                                <li><p><label><input type="checkbox">分配角色</label></p></li>
+                                <li><p><label><input type="checkbox">审核通过</label></p></li>
+                                <li><p><label><input type="checkbox">删除用户</label></p></li>
+                            </ul>
+                        </li>
+                        <li><p><label><input type="checkbox">角色管理</label></p></li>
+                        <li><p><label><input type="checkbox">权限管理</label></p></li>
+                    </ul>
+                </li>
+                <li>
+                    <p class="menuLevel">
+                        <span class="absToggle show"></span>
+                        <label><input type="checkbox">应用管理</label>
+                    </p>
+                    <ul>
+                        <li><p><label><input type="checkbox">应用列表</label></p></li>
+                        <li><p><label><input type="checkbox">策略模版</label></p></li>
+                        <li><p><label><input type="checkbox">策略管理</label></p></li>
+                        <li><p><label><input type="checkbox">组织架构</label></p></li>
+                    </ul>
+                </li>
+                <li>
+                    <p class="menuLevel">
+                        <span class="absToggle show"></span>
+                        <label><input type="checkbox">用户管理</label>
+                    </p>
+                    <ul>
+                        <li>
+                            <p class="menuLevel">
+                                <span class="absToggle show"></span>
+                                <label><input type="checkbox">用户列表</label>
+                            </p>
+                            <ul>
+                                <li><p><label><input type="checkbox">addUser</label></p></li>
+                            </ul>
+                        </li>
+                        <li><p><label><input type="checkbox">用户组</label></p></li>
+                        <li><p><label><input type="checkbox">生物信息</label></p></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+
+        <div class="clf pop_bottom">
+            <button type="submit">提交</button>
+            <button>关闭</button>
+        </div>
+
+    </div>
+</div>
+<script src="js/jquery.min.js"></script>
+<script src="js/base.js"></script>
+<script>
+
+    function f1_check(val) {
+
+        // 获取表单中id为name的元素的value值
+        var roleName = document.getElementById("roleName_" + val).value;
+        var rank = document.getElementById("rank_" + val).value;
+        var describe = document.getElementById("describe_" + val).value;
+
+        if (roleName === "") {
+            alert("请输入角色名");
+            return false;
+        }
+
+        if (rank === "") {
+            alert("请输入排序");
+            return false;
+        }
+
+        if (describe === "") {
+            alert("请输入描述");
+            return false;
+        }
+
+    }
+</script>
+</body>
+</html>

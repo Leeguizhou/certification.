@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>系统_数据字典</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/log.css">
+    <link rel="stylesheet" href="css/xt_sjzd.css">
+</head>
+<body>
+<div class="header">
+    <div class="w">
+        <ul class="nav_l fl clf">
+            <li><a href="index.html">首页</a></li>
+            <li><a href="personal.html">个人信息</a></li>
+            <li><a href="operation_log.html">操作日志</a></li>
+        </ul>
+        <a href="javascript:" class="nav_c">认证中心</a>
+        <ul class="nav_r fr clf">
+            <li>
+                <a href="javascript:">业务管理</a>
+                <div class="pull-down">
+                    <div class="w">
+                        <ul>
+                            <li><a href="gzt_yhcx.html">用户查询</a></li>
+                            <li><a href="gzt_yhsz.html">用户管理</a></li>
+                            <li><a href="gzt_yhsp.html">用户审批</a></li>
+                            <li><a href="gzt_pljz.html">批量鉴证</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <a href="javascript:">系统管理</a>
+                <div class="pull-down">
+                    <div class="w">
+                        <ul>
+                            <li><a href="xt_ywxtgl.html">业务系统管理</a></li>
+                            <li><a href="xt_syyhlb.html">所有用户列表</a></li>
+                            <li><a href="xt_crgl.html">策略管理</a></li>
+                            <li><a href="xt_crmbgl.html">策略模版管理</a></li>
+                            <li><a href="xt_zzjggl.html">组织架构管理</a></li>
+                            <li><a href="xt_jsgl.html">角色管理</a></li>
+                            <li><a href="xt_xtqxgl.html">系统权限管理</a></li>
+                            <li><a href="xt_sjzd.html">数据字典</a></li>
+                            <li><a href="xt_rzbb.html">日志报表</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li><a href="#">退出</a></li>
+        </ul>
+    </div>
+</div>
+
+<div class="w time"><span class="yel">2018-02-01</span><span>13:32:04</span></div>
+<div class="w content">
+    <div class="position"><a href="#">认证中心 > </a><a href="#">工作台 > </a> <span>用户管理</span></div>
+
+    <div class="box">
+        <div class="clf btn">
+            <div class="fl add"><a href="#" id="addDictBtn">添加</a></div>
+            <div class="fl modify"><a href="#" id="editDictBtn">修改</a></div>
+            <div class="fl delete"><a href="#">删除</a></div>
+        </div>
+        <div class="recording">
+            <div class="clf title">
+                <input type="checkbox" class="fl">
+                <div class="fl id">ID</div>
+                <div class="fl s_name">名称</div>
+                <div class="fl value">值</div>
+                <div class="fl type">字典类型</div>
+                <div class="fl create_time">创建时间</div>
+                <div class="fl updated_time">更新时间</div>
+                <div class="fl status">状态</div>
+                <div class="fl note">备注</div>
+            </div>
+            <ul class="list">
+                <li class="clf">
+                    <input type="checkbox" class="fl">
+                    <div class="fl id">20</div>
+                    <div class="fl s_name">系统管理 </div>
+                    <div class="fl value">1</div>
+                    <div class="fl type">字典类型 </div>
+                    <div class="fl create_time">2017-12-01 07:37:29</div>
+                    <div class="fl updated_time">2017-12-01 07:37:29</div>
+                    <div class="fl status"><a href="#">启用</a></div>
+                    <div class="fl note">00</div>
+                </li>
+                <li class="clf">
+                    <input type="checkbox" class="fl">
+                    <div class="fl id">20</div>
+                    <div class="fl s_name"> >系统管理 </div>
+                    <div class="fl value">1</div>
+                    <div class="fl type">字典类型 </div>
+                    <div class="fl create_time">2017-12-01 07:37:29</div>
+                    <div class="fl updated_time">2017-12-01 07:37:29</div>
+                    <div class="fl status"><a href="#">启用</a></div>
+                    <div class="fl note">00</div>
+                </li>
+            </ul>
+        </div>
+        <div class="clf page">
+            <div class="fl">显示第 1 到第 <span>8</span> 条记录，总共 <span>14</span> 条记录每页显示 <span class="sp3">8</span> 条记录</div>
+            <div class="fr">
+                <a href="#"> < </a>
+                <a href="#"> 1 </a>
+                <a href="#"> 2 </a>
+                <a href="#"> > </a>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="w total">
+        <span>今日访问量：<i>2343083</i></span>
+        <span>总访问量：<i>876384240 </i></span>
+        <span>版权所有：<i>认证中心 </i></span>
+    </div>
+</div>
+
+<div class="shade" id="addDictPopup">
+    <div class="popup pop_ups">
+        <div class="clf pop_top">
+            <span class="name">添加字典</span>
+            <a href="#" class="btn" id="closeAddDictPopup"></a>
+        </div>
+        <form action="" onsubmit="return f1_check('1')">
+            <div class="pop_center">
+                <ul>
+                    <li class="clf">
+                        <div class="manner">上级菜单</div>
+                        <div class="select">
+                            <input type="text" placeholder="请输入上级菜单" id="preMenu_1">
+                        </div>
+                    </li>
+                    <li class="clf">
+                        <div class="manner">名称</div>
+                        <div class="select">
+                            <input type="text" placeholder="请输入名称" id="name_1">
+                        </div>
+                    </li>
+                    <li class="clf">
+                        <div class="manner">值</div>
+                        <div class="select">
+                            <input type="text" placeholder="请输入值" id="val_1">
+                        </div>
+                    </li>
+                    <li class="clf">
+                        <div class="manner">字典类型</div>
+                        <div class="select">
+                            <input type="text" placeholder="请输入字典类型" id="dictType_1">
+                        </div>
+                    </li>
+                    <li class="clf">
+                        <div class="manner">备注</div>
+                        <div class="select">
+                            <input type="text" placeholder="请输入备注" id="remarks_1">
+                        </div>
+                    </li>
+
+                    <li class="clf">
+                        <div class="manner">状态</div>
+                        <div class="select">
+                            <input type="radio" name="radio" checked="checked" id="f1"><label for="f1">启用</label>
+                            <input type="radio" name="radio" id="f2"><label for="f2">禁用</label>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="clf pop_bottom">
+                <button type="submit">提交</button>
+                <button>关闭</button>
+            </div>
+        </form>
+
+
+    </div>
+</div>
+<div class="shade" id="editDictPopup">
+    <div class="popup pop_ups">
+        <div class="clf pop_top">
+            <span class="name">修改字典</span>
+            <a href="#" class="btn" id="closeEditDictPopup"></a>
+        </div>
+        <form action="" onsubmit="return f1_check('2')">
+            <div class="pop_center">
+                <ul>
+                    <li class="clf">
+                        <div class="manner">上级菜单</div>
+                        <div class="select">
+                            <input type="text" placeholder="请输入上级菜单" id="preMenu_2">
+                        </div>
+                    </li>
+                    <li class="clf">
+                        <div class="manner">名称</div>
+                        <div class="select">
+                            <input type="text" placeholder="请输入名称" id="name_2">
+                        </div>
+                    </li>
+                    <li class="clf">
+                        <div class="manner">值</div>
+                        <div class="select">
+                            <input type="text" placeholder="请输入值" id="val_2">
+                        </div>
+                    </li>
+                    <li class="clf">
+                        <div class="manner">字典类型</div>
+                        <div class="select">
+                            <input type="text" placeholder="请输入字典类型" id="dictType_2">
+                        </div>
+                    </li>
+                    <li class="clf">
+                        <div class="manner">备注</div>
+                        <div class="select">
+                            <input type="text" placeholder="请输入备注" id="remarks_2">
+                        </div>
+                    </li>
+
+                    <li class="clf">
+                        <div class="manner">状态</div>
+                        <div class="select">
+                            <input type="radio" name="radio" checked="checked" id="f3"><label for="f3">启用</label>
+                            <input type="radio" name="radio" id="f4"><label for="f4">禁用</label>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="clf pop_bottom">
+                <button type="submit">提交</button>
+                <button>关闭</button>
+            </div>
+        </form>
+
+
+    </div>
+</div>
+<script src="js/jquery.min.js"></script>
+<script src="js/base.js"></script>
+<script>
+    function f1_check(id) {
+
+        // 获取表单中id为name的元素的value值
+        var preMenu = document.getElementById("preMenu_" + id).value;
+        var name = document.getElementById("name_" + id).value;
+        var val = document.getElementById("val_" + id).value;
+        var dictType = document.getElementById("dictType_" + id).value;
+        var remarks = document.getElementById("remarks_" + id).value;
+
+        if (preMenu === "") {
+            alert("请输入上级菜单");
+            return false;
+        }
+
+        if (name === "") {
+            alert("请输入名称");
+            return false;
+        }
+
+        if (val === "") {
+            alert("请输入值");
+            return false;
+        }
+
+        if (dictType === "") {
+            alert("请输入字典类型");
+            return false;
+        }
+
+        if (remarks === "") {
+            alert("请输入备注");
+            return false;
+        }
+
+    }
+</script>
+</body>
+</html>

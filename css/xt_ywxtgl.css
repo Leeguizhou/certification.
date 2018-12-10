@@ -1,0 +1,62 @@
+.content .box .recording .id{width:50px;}
+.content .box .recording .role{width:85px;}
+.content .box .recording .key{width:175px;}
+.content .box .recording .public_key{width:180px;}
+.content .box .recording .principal{width:80px;}
+.content .box .recording .tel{width:135px;}
+.content .box .recording .ip{width:150px;}
+.content .box .recording .certified{width:130px;}
+.content .box .recording .status{width:auto;}
+
+.content .box .recording .list li>div{font-size:15px;color:#333;}
+
+
+.pop_ups .pop_center ul li:nth-child(9) .select{padding-top:10px;}
+.pop_ups .pop_center ul li:nth-child(9) .select input{width:18px;height:18px;appearance:none;-moz-appearance:none; -webkit-appearance:none;border:0;background:url(../images/checked.png)no-repeat;margin-right:5px;vertical-align: middle;}
+.pop_ups .pop_center ul li:nth-child(9) .select input[type=checkbox]:checked{ background:url(../images/checkbox.png)no-repeat;}
+.pop_ups .pop_center ul li:nth-child(9) .select label{margin-right:15px;}
+
+
+
+@media only screen and (max-width: 1366px) {
+
+    .content .box .recording .list li>div{font-size: 14px;}
+
+}
+
+
+@media only screen and (max-width: 1024px) {
+
+    .content .box .recording .id{width:3%;}
+    .content .box .recording .role{width:8%;}
+    .content .box .recording .key{width:15%;}
+    .content .box .recording .public_key{width:15%;}
+    .content .box .recording .principal{width:8%;}
+    .content .box .recording .tel{width:12%;}
+    .content .box .recording .title .ip,
+    .content .box .recording .list .ip{width:11%;}
+    .content .box .recording .certified{width:12%;text-align:center;}
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

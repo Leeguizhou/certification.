@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>个人中心</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/personal.css">
+</head>
+<body>
+<div class="header">
+    <div class="w">
+        <ul class="nav_l fl clf">
+            <li><a href="index.html">首页</a></li>
+            <li><a href="personal.html">个人信息</a></li>
+            <li><a href="operation_log.html">操作日志</a></li>
+        </ul>
+        <a href="javascript:" class="nav_c">认证中心</a>
+        <ul class="nav_r fr clf">
+            <li>
+                <a href="javascript:">业务管理</a>
+                <div class="pull-down">
+                    <div class="w">
+                        <ul>
+                            <li><a href="gzt_yhcx.html">用户查询</a></li>
+                            <li><a href="gzt_yhsz.html">用户管理</a></li>
+                            <li><a href="gzt_yhsp.html">用户审批</a></li>
+                            <li><a href="gzt_pljz.html">批量鉴证</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <a href="javascript:">系统管理</a>
+                <div class="pull-down">
+                    <div class="w">
+                        <ul>
+                            <li><a href="xt_ywxtgl.html">业务系统管理</a></li>
+                            <li><a href="xt_syyhlb.html">所有用户列表</a></li>
+                            <li><a href="xt_crgl.html">策略管理</a></li>
+                            <li><a href="xt_crmbgl.html">策略模版管理</a></li>
+                            <li><a href="xt_zzjggl.html">组织架构管理</a></li>
+                            <li><a href="xt_jsgl.html">角色管理</a></li>
+                            <li><a href="xt_xtqxgl.html">系统权限管理</a></li>
+                            <li><a href="xt_sjzd.html">数据字典</a></li>
+                            <li><a href="xt_rzbb.html">日志报表</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li><a href="#">退出</a></li>
+        </ul>
+    </div>
+</div>
+
+<div class="w time"><span class="yel">2018-02-01</span><span>13:32:04</span></div>
+
+<div class="w content">
+    <div class="position"><a href="#">认证中心 ></a><span>个人中心</span></div>
+    <div class="prompt">用户审核不通过，警员号填写错误。<a href="#"></a></div>
+    <!--表单-->
+    <form action="">
+        <div class="clf info">
+            <div class="left">
+                <img src="images/photo_1.jpg" alt="">
+                <button type="submit" class="no">人脸未采集</button>
+                <button type="submit" class="have">指纹已采集</button>
+                <button type="submit" class="no">声纹未采集</button>
+            </div>
+            <div class="center">
+                <ul>
+                    <li><span>用户名</span><input type="text" value="admin" readonly></li>
+                    <li><span>真实姓名</span><input type="text" value="张丹峰" readonly></li>
+                    <li><span>性别</span><input type="text" value="男" readonly></li>
+                    <li><span>手机号</span><input type="text" value="18238762691" readonly></li>
+                    <li><span>身份证号</span><input type="text" value="51200***********7689" readonly></li>
+                    <li><span>密码</span><input type="password" value="************" readonly></li>
+                </ul>
+            </div>
+            <div class="line"></div>
+            <div class="right">
+                <ul>
+                    <li><span>所属机构</span><input type="text" value="海淀区情报科" readonly></li>
+                    <li><span>警员号</span><input type="text" value="7652098712312343444" readonly></li>
+                    <li><span>部门</span><input type="text" value="情报科" readonly></li>
+                </ul>
+            </div>
+            <div class="btn">
+                <a href="javascript:" id="editInp">编辑</a>
+                <div class='saveInp'>保存</div>
+                <div class='saveInp'>取消</div>
+            </div>
+        </div>
+    </form>
+    <!--说明-->
+    <div class="clf instructions">
+        <div>说明：</div>
+        <div>
+            <p>1、姓名：填写户籍登记所用的姓名。必填。    </p>
+            <p>2、身份证号码：填写18位身份证号，有英文字符的，用大写。必填。</p>
+            <p>3、性别：填写“男”或“女”。必填 </p>
+            <p>4、出生年月、入党时间、参加工作时间：填写时，年份一律用4位数字表示，月份一律用2位数字表示，如“197205”。 必填。</p>
+            <p>5、民族：填写民族的全称（如汉族、回族、朝鲜族、维吾尔族等），不能简称“汉”、“回”、“鲜”、“维”等。必填。</p>
+            <p>6、籍贯：本人祖籍所在地的当前国家政区名称，填到县（市、区）一级。必填。</p>
+        </div>
+    </div>
+
+
+</div>
+<div class="w total">
+    <span>今日访问量：<i>2343083</i></span>
+    <span>总访问量：<i>876384240 </i></span>
+    <span>版权所有：<i>认证中心 </i></span>
+</div>
+<script src="js/jquery.min.js"></script>
+<script>
+    var infoInput = $('.info input');
+    var editInp = $('#editInp');
+    var saveInp = $('.saveInp');
+    editInp.on('click', function () {
+        infoInput.removeAttr('readonly');
+        editInp.toggle();
+        saveInp.toggle();
+    });
+    saveInp.on('click', function () {
+        infoInput.attr('readonly','readonly');
+        editInp.toggle();
+        saveInp.toggle();
+    })
+</script>
+</body>
+</html>

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>策略模板管理</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/log.css">
+    <link rel="stylesheet" href="css/operation_log.css">
+    <link rel="stylesheet" href="css/xt_crmbgl.css">
+</head>
+<body>
+<div class="header">
+    <div class="w">
+        <ul class="nav_l fl clf">
+            <li><a href="index.html">首页</a></li>
+            <li><a href="personal.html">个人信息</a></li>
+            <li><a href="operation_log.html">操作日志</a></li>
+        </ul>
+        <a href="javascript:" class="nav_c">认证中心</a>
+        <ul class="nav_r fr clf">
+            <li>
+                <a href="javascript:">业务管理</a>
+                <div class="pull-down">
+                    <div class="w">
+                        <ul>
+                            <li><a href="gzt_yhcx.html">用户查询</a></li>
+                            <li><a href="gzt_yhsz.html">用户管理</a></li>
+                            <li><a href="gzt_yhsp.html">用户审批</a></li>
+                            <li><a href="gzt_pljz.html">批量鉴证</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <a href="javascript:">系统管理</a>
+                <div class="pull-down">
+                    <div class="w">
+                        <ul>
+                            <li><a href="xt_ywxtgl.html">业务系统管理</a></li>
+                            <li><a href="xt_syyhlb.html">所有用户列表</a></li>
+                            <li><a href="xt_crgl.html">策略管理</a></li>
+                            <li><a href="xt_crmbgl.html">策略模版管理</a></li>
+                            <li><a href="xt_zzjggl.html">组织架构管理</a></li>
+                            <li><a href="xt_jsgl.html">角色管理</a></li>
+                            <li><a href="xt_xtqxgl.html">系统权限管理</a></li>
+                            <li><a href="xt_sjzd.html">数据字典</a></li>
+                            <li><a href="xt_rzbb.html">日志报表</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li><a href="#">退出</a></li>
+        </ul>
+    </div>
+</div>
+
+<div class="w time"><span class="yel">2018-02-01</span><span>13:32:04</span></div>
+<div class="w content">
+    <div class="position"><a href="#">认证中心 > </a><a href="#">工作台 > </a> <span>用户管理</span></div>
+
+    <div class="box">
+        <div class="clf btn">
+            <div class="fl add"><a href="#" id="addStrategyBtn">添加</a></div>
+            <div class="fl modify"><a href="#" id="editStrategyBtn">修改</a></div>
+        </div>
+        <div class="recording">
+            <div class="clf title">
+                <input type="checkbox" class="fl">
+                <div class="fl id">ID</div>
+                <div class="fl crid">策略ID</div>
+                <div class="fl description">模板描述</div>
+                <div class="fl appkey">APPKEY</div>
+                <div class="fl l_title">标题</div>
+                <div class="fl file">模板文件</div>
+                <div class="fl l_btn">状态 </div>
+            </div>
+
+            <ul class="list">
+                <li class="clf">
+                    <input type="checkbox" class="fl">
+                    <div class="fl id">1</div>
+                    <div class="fl crid">6 </div>
+                    <div class="fl description">test111</div>
+                    <div class="fl appkey">6783D735EACECE1F945674312312312</div>
+                    <div class="fl l_title">京东</div>
+                    <div class="fl file">{"bit_action":[4,5],"bit_delay":0,"bit_msafasdfd</div>
+                    <div class="fl l_btn"><a href="#">启用</a></div>
+                </li>
+                <li class="clf">
+                    <input type="checkbox" class="fl">
+                    <div class="fl id">2</div>
+                    <div class="fl crid">6 </div>
+                    <div class="fl description">sss</div>
+                    <div class="fl appkey">6783D735EACECE1F945674312312312</div>
+                    <div class="fl l_title">-</div>
+                    <div class="fl file">{"bit_action":[4,5],"bit_delay":0,"bit_msafasdfd</div>
+                    <div class="fl l_btn"><a href="#">启用</a></div>
+                </li>
+            </ul>
+        </div>
+        <div class="clf page">
+            <div class="fl">显示第 1 到第 <span>8</span> 条记录，总共 <span>14</span> 条记录每页显示 <span class="sp3">8</span> 条记录</div>
+            <div class="fr">
+                <a href="#"> < </a>
+                <a href="#"> 1 </a>
+                <a href="#"> 2 </a>
+                <a href="#"> > </a>
+            </div>
+
+
+
+
+        </div>
+
+    </div>
+    <div class="w total">
+        <span>今日访问量：<i>2343083</i></span>
+        <span>总访问量：<i>876384240 </i></span>
+        <span>版权所有：<i>认证中心 </i></span>
+    </div>
+</div>
+<div class="shade" id="addStrategyPopup">
+    <div class="popup pop_ups">
+        <div class="clf pop_top">
+            <span class="name">添加策略</span>
+            <a href="#" class="btn" id="closeAddStrategyPopup"></a>
+        </div>
+        <form action="" onsubmit="return f1_check('1')">
+            <div class="pop_center">
+                <ul>
+                    <li class="clf">
+                        <div class="manner">策略ID</div>
+                        <div class="select">
+                            <select name="" >
+                                <option value="">1111</option>
+                                <option value="">2222</option>
+                                <option value="">3333</option>
+                            </select>
+                        </div>
+                    </li>
+                    <li class="clf">
+                        <div class="manner">策略描述</div>
+                        <div class="select">
+                            <textarea rows="4" cols="50" placeholder="备注：选择策略ID、自动显示策略描述。不可编辑" id="describe_1"></textarea>
+                        </div>
+                    </li>
+                    <li class="clf">
+                        <div class="manner">页面标题</div>
+                        <div class="select"><input type="text" placeholder="备注：如果不输入默认对整个业务系统生效" id="pageTitle_1"></div>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="clf pop_bottom">
+                <button type="submit">提交</button>
+                <button>关闭</button>
+            </div>
+        </form>
+
+
+    </div>
+</div>
+<div class="shade" id="editStrategyPopup">
+    <div class="popup pop_ups">
+        <div class="clf pop_top">
+            <span class="name">修改策略</span>
+            <a href="#" class="btn" id="closeEditStrategyPopup"></a>
+        </div>
+        <form action="" onsubmit="return f1_check('2')">
+            <div class="pop_center">
+                <ul>
+                    <li class="clf">
+                        <div class="manner">策略ID</div>
+                        <div class="select">
+                            <select name="" >
+                                <option value="">1111</option>
+                                <option value="">2222</option>
+                                <option value="">3333</option>
+                            </select>
+                        </div>
+                    </li>
+                    <li class="clf">
+                        <div class="manner">策略描述</div>
+                        <div class="select">
+                            <textarea rows="4" cols="50" placeholder="备注：选择策略ID、自动显示策略描述。不可编辑" id="describe_2"></textarea>
+                        </div>
+                    </li>
+                    <li class="clf">
+                        <div class="manner">页面标题</div>
+                        <div class="select"><input type="text" placeholder="备注：如果不输入默认对整个业务系统生效" id="pageTitle_2"></div>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="clf pop_bottom">
+                <button type="submit">提交</button>
+                <button>关闭</button>
+            </div>
+        </form>
+
+
+    </div>
+</div>
+<script src="js/jquery.min.js"></script>
+<script src="js/base.js"></script>
+<script>
+    function f1_check(val) {
+
+        // 获取表单中id为name的元素的value值
+        var describe = document.getElementById("describe_" + val).value;
+        var pageTitle = document.getElementById("pageTitle_" + val).value;
+
+        if (describe === "") {
+            alert("请输入策略描述");
+            return false;
+        }
+
+        if (pageTitle === "") {
+            alert("请输入页面标题");
+            return false;
+        }
+
+    }
+</script>
+</body>
+</html>

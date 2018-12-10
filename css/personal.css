@@ -1,0 +1,73 @@
+body{width:100%;height:100%;background:url(../images/bk_2.jpg)no-repeat top center/cover;}
+
+.content{width:100%;height:660px;background:#fff;position:relative;margin-top:55px;padding:10px 100px 0;}
+.content .prompt{width:100%;height:36px;border:1px solid #ccc;background:#ebebeb;border-radius:3px;font-size:15px;color:#333;text-align:center;line-height:34px;position:relative;}
+.content .prompt a{display:block;width:27px;height:27px;background:#c2c2c2 url(../images/icon_close.png)no-repeat center;border-radius:50%;position:absolute;right:10px;top:3px;}
+
+.content .info{margin-top:20px;position:relative;}
+.content .info>div{float:left;}
+.content .info .left{width:200px;height:auto;margin-right:50px;}
+.content .info .left img{display:block;width:100%;height:163px;}
+.content .info .left button{display:block;width:100%;height:38px;border-radius:3px;margin-top:10px;font-size:15px;color:#fff;text-align:left;padding-left:80px;line-height:38px;}
+.content .info .left .no{background-color:#1890ff;}
+.content .info .left .have{background-color:#ccc;}
+.content .info .left button:nth-of-type(1){background-image:url(../images/icon_1.png);background-repeat:no-repeat;background-position:45px center;}
+.content .info .left button:nth-of-type(2){background-image:url(../images/icon_2.png);background-repeat:no-repeat;background-position:45px center;}
+.content .info .left button:nth-of-type(3){background-image:url(../images/icon_3.png);background-repeat:no-repeat;background-position:45px center;}
+
+
+.content .info .center ul li,.content .info .right ul li{margin-bottom:25px;}
+.content .info .center ul li span,.content .info .right ul li span{display:inline-block;width:70px;text-align:right;vertical-align: middle;font-size:16px;color:#959595;}
+.content .info .center ul li input,.content .info .right ul li input{width:250px;height:32px;border:1px solid #ccc;border-radius:3px;background:#f2f2f2;font-size:14px;color:#000;line-height:30px;padding:0 10px;margin-left:20px;}
+
+.content .info .line{width:1px;height:280px;background:#eaeaea;margin:6px 29px 0 40px;}
+.content .info .btn{width:120px;height:40px;position:absolute;bottom:-60px;right:0;}
+.content .info .btn a,
+.content .info .btn .saveInp{display: block;width:100%;height:100%;background:#1890ff;border-radius:3px;font-size:16px;color:#fff;text-align:center;line-height:40px;margin-bottom: 5px;cursor: pointer;}
+.content .info .btn .saveInp{display: none;}
+/*说明*/
+.content .instructions{margin-top:40px;}
+.content .instructions>div{float:left;font-size:15px;color:#333;}
+.content .instructions>div p{font-size:15px;color:#333;margin-bottom:10px;}
+
+/*工作台_批量鉴证_详情*/
+.btns{position:absolute;bottom:90px;left:50%;transform:translateX(-50%);text-align:center;line-height:40px;}
+.btns a{display:inline-block;width:140px;height:40px;border-radius:3px;margin-right:5px;font-size:16px;color:#fff;}
+.btns a:first-child,.btns a:last-child{background:#999;}
+.btns a:nth-child(2),.btns a:nth-child(3){background:#1890ff;}
+
+
+
+@media only screen and (max-width: 1600px) {
+
+    .content .info{margin-top: .8rem;}
+    .content .instructions{margin-top: 1rem;}
+
+
+
+
+}
+
+@media only screen and (max-width: 1366px) {
+
+    .content .prompt{height: 32px;font: 14px/30px 'Microsoft YaHei';}
+    .content .prompt a{width: 20px;height: 20px;top: 50%;margin-top: -10px;background-size: 50%;}
+    .content .info .left button{height: 2rem;line-height: 2rem;}
+    .content .info .center ul li,
+    .content .info .right ul li{margin-bottom: .8rem;}
+    .content .info .center ul li span,
+    .content .info .right ul li span{font-size: 14px;}
+    .content .instructions{margin-top: 1.5rem;}
+    .content .instructions>div p{margin-bottom: .5rem;font-size: 14px;}
+
+
+
+
+
+
+
+
+
+
+
+}

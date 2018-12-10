@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>策略管理</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/log.css">
+    <link rel="stylesheet" href="css/operation_log.css">
+    <link rel="stylesheet" href="css/xt_crgl.css">
+</head>
+<body>
+<div class="header">
+    <div class="w">
+        <ul class="nav_l fl clf">
+            <li><a href="index.html">首页</a></li>
+            <li><a href="personal.html">个人信息</a></li>
+            <li><a href="operation_log.html">操作日志</a></li>
+        </ul>
+        <a href="javascript:" class="nav_c">认证中心</a>
+        <ul class="nav_r fr clf">
+            <li>
+                <a href="javascript:">业务管理</a>
+                <div class="pull-down">
+                    <div class="w">
+                        <ul>
+                            <li><a href="gzt_yhcx.html">用户查询</a></li>
+                            <li><a href="gzt_yhsz.html">用户管理</a></li>
+                            <li><a href="gzt_yhsp.html">用户审批</a></li>
+                            <li><a href="gzt_pljz.html">批量鉴证</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <a href="javascript:">系统管理</a>
+                <div class="pull-down">
+                    <div class="w">
+                        <ul>
+                            <li><a href="xt_ywxtgl.html">业务系统管理</a></li>
+                            <li><a href="xt_syyhlb.html">所有用户列表</a></li>
+                            <li><a href="xt_crgl.html">策略管理</a></li>
+                            <li><a href="xt_crmbgl.html">策略模版管理</a></li>
+                            <li><a href="xt_zzjggl.html">组织架构管理</a></li>
+                            <li><a href="xt_jsgl.html">角色管理</a></li>
+                            <li><a href="xt_xtqxgl.html">系统权限管理</a></li>
+                            <li><a href="xt_sjzd.html">数据字典</a></li>
+                            <li><a href="xt_rzbb.html">日志报表</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li><a href="#">退出</a></li>
+        </ul>
+    </div>
+</div>
+
+<div class="w time"><span class="yel">2018-02-01</span><span>13:32:04</span></div>
+<div class="w content">
+    <div class="position"><a href="#">认证中心 > </a><a href="#">工作台 > </a> <span>用户管理</span></div>
+
+    <div class="box">
+        <div class="clf btn">
+            <div class="fl add"><a href="#" id="addStrategyBtn">添加</a></div>
+            <div class="fl modify"><a href="#" id="editStrategyBtn">修改</a></div>
+        </div>
+        <div class="recording">
+            <div class="clf title">
+                <input type="checkbox" class="fl">
+                <div class="fl id">ID</div>
+                <div class="fl certified">认证方式</div>
+                <div class="fl execute">执行方式</div>
+                <div class="fl control_time">执行控制时间（s）</div>
+                <div class="fl prompt">提示信息</div>
+                <div class="fl change_time">修改时间</div>
+            </div>
+            <ul class="list">
+                <li class="clf">
+                    <input type="checkbox" class="fl">
+                    <div class="fl id">18</div>
+                    <div class="fl certified">离位 </div>
+                    <div class="fl execute">警告、最小化 </div>
+                    <div class="fl control_time">120</div>
+                    <div class="fl prompt">test01</div>
+                    <div class="fl change_time">2018-01-11 10:25:27</div>
+                </li>
+                <li class="clf">
+                    <input type="checkbox" class="fl">
+                    <div class="fl id">7</div>
+                    <div class="fl certified">离位 </div>
+                    <div class="fl execute">关闭</div>
+                    <div class="fl control_time">1</div>
+                    <div class="fl prompt">test0201cmlkxbvkfdlhglkfd  </div>
+                    <div class="fl change_time">2018-01-11 10:25:27</div>
+                </li>
+
+
+            </ul>
+        </div>
+        <div class="clf page">
+            <div class="fl">显示第 1 到第 <span>8</span> 条记录，总共 <span>14</span> 条记录每页显示 <span class="sp3">8</span> 条记录</div>
+            <div class="fr">
+                <a href="#"> < </a>
+                <a href="#"> 1 </a>
+                <a href="#"> 2 </a>
+                <a href="#"> > </a>
+            </div>
+        </div>
+
+    </div>
+    <div class="w total">
+        <span>今日访问量：<i>2343083</i></span>
+        <span>总访问量：<i>876384240 </i></span>
+        <span>版权所有：<i>认证中心 </i></span>
+    </div>
+</div>
+
+<div class="shade" id="addStrategyPopup">
+    <div class="popup pop_ups">
+        <div class="clf pop_top">
+            <span class="name">添加策略</span>
+            <a href="#" class="btn" id="closeAddStrategyPopup"></a>
+        </div>
+        <form action="" onsubmit="return f1_check('1')">
+            <div class="pop_center">
+                <ul>
+                    <li class="clf">
+                        <div class="manner">认证方式</div>
+                        <div class="select">
+                            <select name="" id="">
+                                <option value="">离位</option>
+                                <option value="">离位1</option>
+                                <option value="">离位2</option>
+                            </select>
+                        </div>
+                    </li>
+                    <li class="clf">
+                        <div class="manner">执行方式</div>
+                        <div class="select">
+                            <div><input type="checkbox" name="executiveMode" id="f1"><label for="f1">锁屏</label></div>
+                            <div><input type="checkbox" name="executiveMode" id="f2"><label for="f2">模糊化</label></div>
+                            <div><input type="checkbox" name="executiveMode" id="f3"><label for="f3">警告</label></div>
+                            <div><input type="checkbox" name="executiveMode" id="f4"><label for="f4">最小化</label></div>
+                            <div><input type="checkbox" name="executiveMode" id="f5"><label for="f5">关闭</label></div>
+                            <div><input type="checkbox" name="executiveMode" id="f6"><label for="f6">注销</label></div>
+                            <div><input type="checkbox" name="executiveMode" id="f7"><label for="f7">关机</label></div>
+                            <div><input type="checkbox" name="executiveMode" id="f8"><label for="f8">断网</label></div>
+                        </div>
+                    </li>
+                    <li class="clf">
+                        <div class="manner">执行空时间</div>
+                        <div class="select"><input type="text" placeholder="请输入执行控制时间S" id="executionTime_1"></div>
+                    </li>
+                    <li class="clf">
+                        <div class="manner">提示信息</div>
+                        <div class="select"><input type="text" placeholder="请输入提示信息" id="explain_1"></div>
+                    </li>
+                </ul>
+            </div>
+            <div class="clf pop_bottom">
+                <button type="submit">提交</button>
+                <button>关闭</button>
+            </div>
+        </form>
+
+
+    </div>
+</div>
+<div class="shade" id="editStrategyPopup">
+    <div class="popup pop_ups">
+        <div class="clf pop_top">
+            <span class="name">修改策略</span>
+            <a href="#" class="btn" id="closeEditStrategyPopup"></a>
+        </div>
+        <form action="" onsubmit="return f1_check('2')">
+            <div class="pop_center">
+                <ul>
+                    <li class="clf">
+                        <div class="manner">认证方式</div>
+                        <div class="select">
+                            <select name="" id="">
+                                <option value="">离位</option>
+                                <option value="">离位1</option>
+                                <option value="">离位2</option>
+                            </select>
+                        </div>
+                    </li>
+                    <li class="clf">
+                        <div class="manner">执行方式</div>
+                        <div class="select">
+                            <div><input type="checkbox" name="executiveMode" id="f1"><label for="f1">锁屏</label></div>
+                            <div><input type="checkbox" name="executiveMode" id="f2"><label for="f2">模糊化</label></div>
+                            <div><input type="checkbox" name="executiveMode" id="f3"><label for="f3">警告</label></div>
+                            <div><input type="checkbox" name="executiveMode" id="f4"><label for="f4">最小化</label></div>
+                            <div><input type="checkbox" name="executiveMode" id="f5"><label for="f5">关闭</label></div>
+                            <div><input type="checkbox" name="executiveMode" id="f6"><label for="f6">注销</label></div>
+                            <div><input type="checkbox" name="executiveMode" id="f7"><label for="f7">关机</label></div>
+                            <div><input type="checkbox" name="executiveMode" id="f8"><label for="f8">断网</label></div>
+                        </div>
+                    </li>
+                    <li class="clf">
+                        <div class="manner">执行空时间</div>
+                        <div class="select"><input type="text" placeholder="请输入执行控制时间S" id="executionTime_2"></div>
+                    </li>
+                    <li class="clf">
+                        <div class="manner">提示信息</div>
+                        <div class="select"><input type="text" placeholder="请输入提示信息" id="explain_2"></div>
+                    </li>
+                </ul>
+            </div>
+            <div class="clf pop_bottom">
+                <button type="submit">提交</button>
+                <button>关闭</button>
+            </div>
+        </form>
+
+
+    </div>
+</div>
+<script src="js/jquery.min.js"></script>
+<script src="js/base.js"></script>
+<script>
+    function f1_check(val) {
+
+        // 获取表单中id为name的元素的value值
+        var executionTime = document.getElementById("executionTime_" + val).value;
+        var explain = document.getElementById("explain_" + val).value;
+
+        if (executionTime === "") {
+            alert("请输入执行控制时间S");
+            return false;
+        }
+
+        if (explain === "") {
+            alert("请输入提示信息");
+            return false;
+        }
+
+    }
+</script>
+</body>
+</html>

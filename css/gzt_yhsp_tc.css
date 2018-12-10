@@ -1,0 +1,57 @@
+body{width:100%;height:100%;background:url(../images/bk_2.jpg)no-repeat top center/cover;}
+.approval{width:100%;height:auto;background:#fff;margin-top:90px;position:relative;top:-30px;left:0;padding:35px 0 65px 25px;}
+.approval .position{position:absolute;top:-30px;left:0;}
+.approval .position a{font-size:14px;color:#fff;margin-right:10px;}
+.approval .position span{font-size:14px;color:#fff;border-bottom:1px solid #fff;}
+.approval .info>div{float:left;}
+.approval .info>div .img{width:200px;height:163px;margin-right:15px;}
+.approval .info>div .img img{width:100%;height:100%;}
+.approval .info>div ul li{margin-bottom:14px;}
+.approval .info>div ul li span{display:inline-block;width:70px;text-align:right;height:32px;line-height:32px;font-size:16px;color:#959595;margin-right:20px;}
+.approval .info>div ul li input{width:250px;height:32px;border:1px solid #ccc;border-radius:3px;background:#f2f2f2;padding-left:15px;line-height:30px;font-size:14px;color:#000;}
+.approval .info .line{width:1px;height:400px;background:#ccc;margin:0 20px 0 18px;}
+
+.approval .opinion{width:1150px;height:117px;border:1px solid #ccc;border-radius:3px;resize:none;padding:10px 15px;}
+.approval .opinion span{vertical-align:top;font-size:15px;color:#000;}
+.approval .opinion textarea{width:90%;height:100%;resize:none;border:0;font-size:15px;color:#333;}
+
+.approval .btn{margin:30px auto 0;padding-left:445px;}
+.approval .btn a{display:inline-block;width:120px;height:40px;border-radius:3px;font-size:16px;color:#FFF;line-height:40px;}
+.approval .btn a:first-child{background:#1890ff url(../images/icon_g.png)no-repeat 32px center;padding-left:57px;margin-right:20px;}
+.approval .btn a:last-child{background:#d15c47 url(../images/icon_x.png)no-repeat 26px center;padding-left:46px;}
+
+
+@media only screen and (max-width: 1600px) {
+
+    .approval{margin-top: 1.5rem;padding: 1.5rem 1.5rem 2rem;top: auto;}
+    .approval .position{top: -1.2rem;}
+    .approval .info>div ul li{margin-bottom: .5rem;}
+    .approval .info>div ul li span{font-size: 14px;}
+    .approval .info .line{height: 370px;}
+
+
+
+
+
+
+
+}
+
+@media only screen and (max-width: 1366px) {
+
+    .approval{padding-bottom: 1rem;}
+    .approval .info>div ul li span{font-size: 12px;height: 27px;line-height: 27px;}
+    .approval .info>div ul li input{height: 27px;line-height: 25px;}
+    .approval .info .line{height: 330px;}
+    .approval .btn{margin-top: 1rem;}
+    .approval .opinion{height: 100px;}
+
+
+
+
+
+
+
+
+
+}

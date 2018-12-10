@@ -1,0 +1,81 @@
+.content .box .btn input{float:left;}
+.content .box .btn input[type=text]{width:250px;height:40px;border:1px solid #ccc;border-right:0;border-top-left-radius:3px;border-bottom-left-radius:3px;padding-left:10px;background:#fafafa;font-size:14px;}
+.content .box .btn input[type=submit]{width:100px;height:40px;background:#1890ff url(../images/icon_inquire.png)no-repeat 18px center;font-size:16px;color:#FFF;border-top-right-radius:3px;border-bottom-right-radius:3px;padding-left:40px;text-align:left;cursor:pointer;}
+.content .box .btn .xqLink{float: left;width:150px;height:40px;border-radius:3px;font-size:16px;color:#fff;text-align:center;line-height:40px;margin-left:15px;background:#1890ff;}
+
+.recording .p_img{width:80px;}
+.recording .p_name{width:120px;}
+.recording .p_number{width:170px;}
+.recording .p_unit{width:400px;}
+.recording .p_phone{width:170px;}
+.recording .list .p_img{margin-top:5px;}
+.recording .list .p_img img{width:43px;height:36px;display:block;}
+
+/*工作台_用户日志*/
+.recording .p_dw{width:230px;}
+.recording .p_tel{width:130px;}
+
+
+/*工作台_用户审批*/
+.recording .p_sp{width:610px;}
+.recording .p_sp span{color:#1890ff;text-decoration:underline;}
+.recording .p_cz a{font-size:15px;color:#1890ff;}
+
+
+/*工作台_用户设置*/
+.box .btn .sz{width:auto;height:40px;margin-right:8px;border:1px solid #ccc;border-radius:3px;}
+.box .btn .sz>div a{display:block;width:auto;height:100%;line-height:38px;font-size:14px;color:#000;}
+.box .btn .sz .bd a{padding:0 15px 0 34px;background:url(../images/icon_l.png)no-repeat 15px center;border-right:1px solid #ccc;}
+.box .btn .sz .gl a{padding:0 15px 0 34px;background:url(../images/icon_r.png)no-repeat 15px center;border-right:1px solid #ccc;}
+.box .btn .sz .jz a{padding:0 15px 0 34px;background:url(../images/icon_s.png)no-repeat 15px center;}
+.box .btn .sz .bd a:hover{background:#1890ff url(../images/icon_l_b.png)no-repeat 15px center;color:#fff;}
+.box .btn .sz .gl a:hover{background:#1890ff url(../images/icon_r_b.png)no-repeat 15px center;color:#fff;}
+.box .btn .sz .jz a:hover{background:#1890ff url(../images/icon_s_b.png)no-repeat 15px center;color:#fff;}
+
+.popup.sysBind{width:1020px;margin-left: -510px;}
+.popupMain{padding: 0 20px 25px;}
+.popupMain .noBind,
+.popupMain .isBind{width: 44%;}
+.popupMain h4{font: 14px/43px 'Microsoft YaHei';text-align: center;}
+.popupMain .search{width: 88%;height: 36px;border-radius: 3px;margin:15px auto;}
+.popupMain .search input{width: 75%;height: 100%;border-top-left-radius: 3px;border-bottom-left-radius: 3px;border: 1px solid #ccc;border-right: none;background-color: #fafafa;padding: 0 10px;}
+.popupMain .search button{width: 25%;height: 100%;color: #fff;border-top-right-radius: 3px;border-bottom-right-radius: 3px;letter-spacing: 3px;font-size: 15px;padding-left: 1.5rem;background:#1890FF url("../images/icon_inquire.png") no-repeat 20%;}
+.popupMain .functionDiv{height: 486px;border: 1px solid #dbdbdb;background-color: #f5f5f5;}
+.popupMain .functionDiv li{float: left;width: 25%;padding: 0 2.5% 1rem;text-align: center;}
+.popupMain .functionDiv li .img{width: 60px;margin: auto;position: relative;}
+.popupMain .functionDiv li .img:after{content: ' ';position: absolute;left: 50%;bottom: 0;width: 70%;height: 0;box-shadow: 0 0 10px 4px rgba(0,0,0,.6);transform: translateX(-50%);border-radius: 50%;z-index: 0;}
+
+.popupMain .functionDiv li img{display: block;width: 60px;height: 60px;margin: auto;z-index: 1;position: relative;}
+.popupMain .functionDiv li span{line-height: 3;font-size: 14px;z-index: 1;position: relative;}
+.popupMain .operation{width: 12%;padding: 130px 2% 0;}
+.popupMain .operation .button{display: block;width: 100%;height: 90px;margin:8px 0;border-radius: 3px;}
+.popupMain .operation .Rbtn{background: #1890FF url("../images/icon_right.png") no-repeat center;}
+.popupMain .operation .Lbtn{background: #1890FF url("../images/icon_left.png") no-repeat center;}
+.popupBtnDiv{padding:20px;text-align: right;border-top: 1px solid #ececec;}
+.popupBtnDiv button{width: 96px;height: 36px;margin-left: 15px;border-radius: 3px;color: #fff;font-size: 16px;}
+.popupBtnDiv button.cancel{background-color: #c2c2c2;}
+.popupBtnDiv button.submit{background-color: #1890FF;}
+
+@media only screen and (max-width: 1366px) {
+
+    .box .btn .sz,
+    .box .btn .sz>div a,
+    .content .box .btn input[type=text],
+    .content .box .btn input[type=submit],
+    .content .box .btn .xqLink{height: 30px;line-height: 28px;font-size: 13px;}
+    .content .box .btn .xqLink{width: 100px;}
+    .recording .list .p_img{margin-top: 2px;}
+    .recording .list .p_img img{width: 37px;height: 31px;}
+
+    .popup.sysBind{width: 850px;margin-left: -425px;}
+    .popupMain .functionDiv{height: 350px;}
+    .popupMain .functionDiv li{padding-bottom: 0;}
+    .popupMain .functionDiv li .img,
+    .popupMain .functionDiv li img{width: 50px;height: 50px;}
+
+
+
+
+
+
+}

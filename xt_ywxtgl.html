@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>系统_业务系统管理</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/log.css">
+    <link rel="stylesheet" href="css/xt_syyhlb.css">
+    <link rel="stylesheet" href="css/xt_ywxtgl.css">
+</head>
+<body>
+<div class="header">
+    <div class="w">
+        <ul class="nav_l fl clf">
+            <li><a href="index.html">首页</a></li>
+            <li><a href="personal.html">个人信息</a></li>
+            <li><a href="operation_log.html">操作日志</a></li>
+        </ul>
+        <a href="javascript:" class="nav_c">认证中心</a>
+        <ul class="nav_r fr clf">
+            <li>
+                <a href="javascript:">业务管理</a>
+                <div class="pull-down">
+                    <div class="w">
+                        <ul>
+                            <li><a href="gzt_yhcx.html">用户查询</a></li>
+                            <li><a href="gzt_yhsz.html">用户管理</a></li>
+                            <li><a href="gzt_yhsp.html">用户审批</a></li>
+                            <li><a href="gzt_pljz.html">批量鉴证</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <a href="javascript:">系统管理</a>
+                <div class="pull-down">
+                    <div class="w">
+                        <ul>
+                            <li><a href="xt_ywxtgl.html">业务系统管理</a></li>
+                            <li><a href="xt_syyhlb.html">所有用户列表</a></li>
+                            <li><a href="xt_crgl.html">策略管理</a></li>
+                            <li><a href="xt_crmbgl.html">策略模版管理</a></li>
+                            <li><a href="xt_zzjggl.html">组织架构管理</a></li>
+                            <li><a href="xt_jsgl.html">角色管理</a></li>
+                            <li><a href="xt_xtqxgl.html">系统权限管理</a></li>
+                            <li><a href="xt_sjzd.html">数据字典</a></li>
+                            <li><a href="xt_rzbb.html">日志报表</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li><a href="#">退出</a></li>
+        </ul>
+    </div>
+</div>
+
+<div class="w time"><span class="yel">2018-02-01</span><span>13:32:04</span></div>
+<div class="w content">
+    <div class="position"><a href="#">认证中心 > </a><a href="#">工作台 > </a> <span>用户管理</span></div>
+
+    <div class="box">
+        <form action="">
+            <div class="clf btn">
+                <div class="fl add"><a href="#" id="addAppBtn">添加</a></div>
+                <div class="fl modify"><a href="#" id="editAppBtn">修改</a></div>
+                <div class="fl authority"><a href="#" id="dzStrategy">定制策略</a></div>
+                <div class="fl delete"><a href="#">删除</a></div>
+                <div class="fl inquire">
+                    <input type="text" placeholder="请输入您要查询的内容"><input type="submit" value="查询">
+                </div>
+            </div>
+        </form>
+
+        <div class="recording">
+            <div class="clf title">
+                <input type="checkbox" class="fl">
+                <div class="fl id">ID</div>
+                <div class="fl role"> 角色名 </div>
+                <div class="fl key">应用KEY </div>
+                <div class="fl public_key">应用公钥</div>
+                <div class="fl principal">负责人</div>
+                <div class="fl tel">联系电话</div>
+                <div class="fl ip">部署IP</div>
+                <div class="fl certified"> 认证中心名称</div>
+                <div class="fl status"> 审核状态</div>
+            </div>
+            <ul class="list">
+                <li class="clf">
+                    <input type="checkbox" class="fl">
+                    <div class="fl id">1</div>
+                    <div class="fl role">认证中心 </div>
+                    <div class="fl key">e7d5d58cc5a13812 </div>
+                    <div class="fl public_key">e7d5d58cc5a13812 </div>
+                    <div class="fl principal">林敏波 </div>
+                    <div class="fl tel">18317890629 </div>
+                    <div class="fl ip">192.168.10.178 </div>
+                    <div class="fl certified">中心 </div>
+                    <div class="fl status"><a href="#" class="by">审核未通过</a></div>
+                </li>
+                <li class="clf">
+                    <input type="checkbox" class="fl">
+                    <div class="fl id">1</div>
+                    <div class="fl role">认证中心 </div>
+                    <div class="fl key">e7d5d58cc5a13812 </div>
+                    <div class="fl public_key">e7d5d58cc5a13812 </div>
+                    <div class="fl principal">林敏波 </div>
+                    <div class="fl tel">18317890629 </div>
+                    <div class="fl ip">192.168.10.178 </div>
+                    <div class="fl certified">中心 </div>
+                    <div class="fl status"><a href="#" class="n_by">审核未通过</a></div>
+                </li>
+
+            </ul>
+        </div>
+        <div class="clf page">
+            <div class="fl">显示第 1 到第 <span>8</span> 条记录，总共 <span>14</span> 条记录每页显示 <span class="sp3">8</span> 条记录</div>
+            <div class="fr">
+                <a href="#"> < </a>
+                <a href="#"> 1 </a>
+                <a href="#"> 2 </a>
+                <a href="#"> > </a>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="w total">
+        <span>今日访问量：<i>2343083</i></span>
+        <span>总访问量：<i>876384240 </i></span>
+        <span>版权所有：<i>认证中心 </i></span>
+    </div>
+</div>
+<div class="shade" id="addAppPopup">
+    <div class="popup pop_ups">
+        <div class="clf pop_top">
+            <span class="name">添加应用</span>
+            <a href="#" class="btn" id="closeAddAppPopup"></a>
+        </div>
+        <form onsubmit="return f1_check('1')">
+            <div class="pop_center">
+                <ul>
+                    <li class="clf">
+                        <div class="manner">应用名称</div>
+                        <div class="select">
+                            <input type="text" placeholder="请输入应用名称" id="appName_1">
+                        </div>
+                    </li>
+                    <li class="clf">
+                        <div class="manner">应用key</div>
+                        <div class="select">
+                            <input type="text" placeholder="请输入应用key" id="appKey_1">
+                        </div>
+                    </li>
+                    <li class="clf">
+                        <div class="manner">应用公钥</div>
+                        <div class="select">
+                            <input type="text" placeholder="请输入应用公钥" id="appPublicKey_1">
+                        </div>
+                    </li>
+                    <li class="clf">
+                        <div class="manner">回调地址</div>
+                        <div class="select">
+                            <input type="text" placeholder="请输入回调地址" id="tokenUrl_1">
+                        </div>
+                    </li>
+                    <li class="clf">
+                        <div class="manner">应用logo地址</div>
+                        <div class="select">
+                            <input type="text" placeholder="请输入应用logo地址" id="logoUrl_1">
+                        </div>
+                    </li>
+                    <li class="clf">
+                        <div class="manner">责任人</div>
+                        <div class="select">
+                            <input type="text" placeholder="请输入责任人" id="principal_1">
+                        </div>
+                    </li>
+                    <li class="clf">
+                        <div class="manner">联系方式</div>
+                        <div class="clf select">
+                            <input type="text" class="fl" placeholder="请输入联系方式" id="contact_1">
+                        </div>
+                    </li>
+                    <li class="clf">
+                        <div class="manner">部署IP</div>
+                        <div class="select">
+                            <input type="text" placeholder="请输入部署IP" id="deployIP_1">
+                        </div>
+                    </li>
+                    <li class="clf">
+                        <div class="manner">采集方式</div>
+                        <div class="select">
+                            <input type="checkbox" checked="checked" id="f3"><label for="f3">声纹</label>
+                            <input type="checkbox" id="f4"><label for="f4">人脸</label>
+                            <input type="checkbox" id="f5"><label for="f5">指纹</label>
+                            <input type="checkbox" id="f6"><label for="f6">瞳孔</label>
+                        </div>
+                    </li>
+                    <li class="clf">
+                        <div class="manner">认证中心ID</div>
+                        <div class="select">
+                            <input type="text" placeholder="请输入认证中心ID" id="essId_1">
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="clf pop_bottom">
+                <button type="submit">提交</button>
+                <button>关闭</button>
+            </div>
+        </form>
+
+
+    </div>
+</div>
+<div class="shade" id="editAppPopup">
+    <div class="popup pop_ups">
+        <div class="clf pop_top">
+            <span class="name">修改应用</span>
+            <a href="#" class="btn" id="closeEditAppPopup"></a>
+        </div>
+        <form action="" onsubmit="return f1_check('2')">
+            <div class="pop_center">
+                <ul>
+                    <li class="clf">
+                        <div class="manner">应用名称</div>
+                        <div class="select">
+                            <input type="text" placeholder="请输入应用名称" id="appName_2">
+                        </div>
+                    </li>
+                    <li class="clf">
+                        <div class="manner">应用key</div>
+                        <div class="select">
+                            <input type="text" placeholder="请输入应用key" id="appKey_2">
+                        </div>
+                    </li>
+                    <li class="clf">
+                        <div class="manner">应用公钥</div>
+                        <div class="select">
+                            <input type="text" placeholder="请输入应用公钥" id="appPublicKey_2">
+                        </div>
+                    </li>
+                    <li class="clf">
+                        <div class="manner">回调地址</div>
+                        <div class="select">
+                            <input type="text" placeholder="请输入应用公钥" id="tokenUrl_2">
+                        </div>
+                    </li>
+                    <li class="clf">
+                        <div class="manner">应用logo地址</div>
+                        <div class="select">
+                            <input type="text" placeholder="请输入应用logo地址" id="logoUrl_2">
+                        </div>
+                    </li>
+                    <li class="clf">
+                        <div class="manner">责任人</div>
+                        <div class="select">
+                            <input type="text" placeholder="请输入责任人" id="principal_2">
+                        </div>
+                    </li>
+                    <li class="clf">
+                        <div class="manner">联系方式</div>
+                        <div class="clf select">
+                            <input type="text" class="fl" placeholder="请输入联系方式" id="contact_2">
+                        </div>
+                    </li>
+                    <li class="clf">
+                        <div class="manner">部署IP</div>
+                        <div class="select">
+                            <input type="text" placeholder="请输入部署IP" id="deployIP_2">
+                        </div>
+                    </li>
+                    <li class="clf">
+                        <div class="manner">采集方式</div>
+                        <div class="select">
+                            <input type="checkbox" checked="checked" id="f7"><label for="f7">声纹</label>
+                            <input type="checkbox" id="f8"><label for="f8">人脸</label>
+                            <input type="checkbox" id="f9"><label for="f9">指纹</label>
+                            <input type="checkbox" id="f10"><label for="f10">瞳孔</label>
+                        </div>
+                    </li>
+                    <li class="clf">
+                        <div class="manner">认证中心ID</div>
+                        <div class="select">
+                            <input type="text" placeholder="请输入认证中心ID" id="essId_2">
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="clf pop_bottom">
+                <button type="submit">提交</button>
+                <button>关闭</button>
+            </div>
+        </form>
+
+
+    </div>
+</div>
+<div class="shade" id="dzStrategyPopup">
+    <div class="popup pop_ups">
+        <div class="clf pop_top">
+            <span class="name">定制策略</span>
+            <a href="#" class="btn" id="closeDzStrategy"></a>
+        </div>
+        <form action="">
+            <div class="pop_center">
+                <ul>
+                    <li class="clf">
+                        <div class="manner">策略ID</div>
+                        <div class="select">
+                            <select name="" >
+                                <option value="">1111</option>
+                                <option value="">2222</option>
+                                <option value="">3333</option>
+                            </select>
+                        </div>
+                    </li>
+                    <li class="clf">
+                        <div class="manner">策略描述</div>
+                        <div class="select">
+                            <textarea rows="4" cols="50" placeholder="备注：选择策略ID、自动显示策略描述。不可编辑"></textarea>
+                        </div>
+                    </li>
+                    <li class="clf">
+                        <div class="manner">页面标题</div>
+                        <div class="select"><input type="text" placeholder="备注：如果不输入默认对整个业务系统生效"></div>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="clf pop_bottom">
+                <button type="submit">提交</button>
+                <button>关闭</button>
+            </div>
+        </form>
+
+
+    </div>
+</div>
+<script src="js/jquery.min.js"></script>
+<script src="js/base.js"></script>
+<script>
+    function f1_check(val) {
+
+        // 获取表单中id为name的元素的value值
+        var appName = document.getElementById("appName_" + val).value;
+        var appKey = document.getElementById("appKey_" + val).value;
+        var appPublicKey = document.getElementById("appPublicKey_" + val).value;
+        var tokenUrl = document.getElementById("tokenUrl_" + val).value;
+        var logoUrl = document.getElementById("logoUrl_" + val).value;
+        var principal = document.getElementById("principal_" + val).value;
+        var contact = document.getElementById("contact_" + val).value;
+        var deployIP = document.getElementById("deployIP_" + val).value;
+        var essId = document.getElementById("essId_" + val).value;
+
+
+        if (appName === "") {
+            alert("请输入应用名称");
+            return false;
+        }
+
+        if (appKey === "") {
+            alert("请输入应用key");
+            return false;
+        }
+
+        if (appPublicKey === "") {
+            alert("请输入应用公钥");
+            return false;
+        }
+
+        if (tokenUrl === "") {
+            alert("请输入回调地址");
+            return false;
+        }
+
+        if (logoUrl === "") {
+            alert("请输入应用logo地址");
+            return false;
+        }
+
+        if (principal === "") {
+            alert("请输入责任人");
+            return false;
+        }
+
+        if (contact === "") {
+            alert("请输入联系方式");
+            return false;
+        }
+
+        if (deployIP === "") {
+            alert("请输入部署IP");
+            return false;
+        }
+
+/*
+        phone_re = /^1[34578]\d{9}$/;
+        if (phone_re.test(phone)) {
+
+        } else {
+            alert("请输入正确的手机号");
+            return false;
+        }
+*/
+
+/*
+        email_re = /^[a-z0-9](\w|\.|-)*@([a-z0-9]+-?[a-z0-9]+\.){1,3}[a-z]{2,4}$/i;
+        if (email_re.test(email)) {
+
+        } else {
+            alert("请输入正确的邮箱");
+            return false;
+        }
+*/
+
+
+    }
+</script>
+</body>
+</html>

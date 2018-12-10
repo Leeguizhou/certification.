@@ -1,0 +1,52 @@
+.box .search{height:40px;}
+.box .search select,
+.box .search input{width: 138px;height: 40px;border-radius: 3px;border: 1px solid #ccc;background-color: #fafafa;padding: 0 10px;margin-right: 5px;}
+.box .search select{background: url("../images/icon_b_arrow.png") no-repeat 90%;-webkit-appearance: none;-moz-appearance: none;appearance: none;}
+.box .search input[title=time]{background: url("../images/icon_calendar.png") no-repeat 90%;}
+.box .search button{width: 100px;height: 40px;border-radius: 3px;color: #fff;font-size: 16px;letter-spacing: 2px;padding-left: 1.5rem;background:#1890FF url("../images/icon_inquire.png") no-repeat 25%;}
+
+.box .recording .list li div{font-size:15px;color:#333;}
+
+.box .recording .appName{width: 14%;}
+.box .recording .ip{width: 12%;}
+.box .recording .macAddr{width: 16%;}
+.box .recording .operation{width: 34%;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;}
+.box .recording .change_time{width: 16%;}
+
+
+.box .btn{width:157px;height:40px;margin-right:8px;border:1px solid #ccc;border-radius:3px;}
+
+.box .btn div a{display:block;width:auto;height:100%;line-height:38px;font-size:14px;color:#000;}
+.box .btn div:not(:last-child) a{border-right: 1px solid #ccc;}
+.box .btn .add a{padding:0 15px 0 34px;background:url(../images/icon_add.png)no-repeat 15px center;}
+.box .btn .modify a{padding:0 15px 0 34px;background:url(../images/icon_pen.png)no-repeat 15px center;}
+.box .btn div a:hover{color: #fff;}
+.box .btn .add a:hover{padding:0 15px 0 34px;background:#1890FF url(../images/icon_add_b.png)no-repeat 15px center;}
+.box .btn .modify a:hover{padding:0 15px 0 34px;background:#1890FF url(../images/icon_pen_b.png)no-repeat 15px center;}
+
+
+
+@media only screen and (max-width: 1366px) {
+
+    .box .search,
+    .box .search select,
+    .box .search input,
+    .box .search button {height: 30px;}
+
+    .content .box .recording .title>div,
+    .box .recording .list li div{font-size: 14px;}
+
+    .box .btn,
+    .box .btn div a{height: 30px;line-height: 28px;}
+
+
+
+
+
+
+
+
+
+
+
+}

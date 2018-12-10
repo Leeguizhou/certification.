@@ -1,0 +1,74 @@
+.content .box .btn input{float:left;}
+.content .box .btn input[type=text]{width:250px;height:40px;border:1px solid #ccc;border-right:0;border-top-left-radius:3px;border-bottom-left-radius:3px;padding-left:10px;background:#fafafa;font-size:14px;}
+.content .box .btn input[type=submit]{width:100px;height:40px;background:#1890ff url(../images/icon_inquire.png)no-repeat 18px center;font-size:16px;color:#FFF;border-top-right-radius:3px;border-bottom-right-radius:3px;padding-left:40px;text-align:left;cursor:pointer;}
+
+.card{padding-top:15px;}
+.card ul li{float:left;width:375px;height:140px;background:#f6f6f6;border-radius:3px;padding:10px 0 0 10px;margin:0 15px 15px 0;}
+.card ul li:nth-child(3n){margin-right:0;}
+.card ul li>div{float:left;}
+.card ul li .img{width:148px;height:120px;margin-right:10px;}
+.card ul li .img img{width:100%;height:100%;}
+.card ul li .info>div{margin-bottom:15px;}
+.card ul li .info>div span{font-size:15px;color:#333;}
+.card ul li .info .section a{display:block;float:right;width:54px;height:23px;background:#00b2ff;border-radius:2px;font-size:14px;color:#fff;text-align:center;line-height:23px;}
+
+
+
+
+
+.detailPopup{width:1100px;height:618px;margin-left: -550px;}
+
+.detailPopup .title{width:100%;height:51px;border-bottom:1px solid #ececec;line-height:50px;}
+.detailPopup .title .name{font-size:16px;color:#333;font-weight:bold;margin-left:20px;}
+.detailPopup .title .btn{display:block;float:right;width:16px;height:16px;background:url(../images/icon_close_1.png)no-repeat center/cover;margin:20px 20px 0 0;}
+
+.detailPopup .info{padding:35px 0 0 50px;}
+.detailPopup .info>div{float:left;}
+.detailPopup .info .left{width:200px;height:auto;margin-right:50px;}
+.detailPopup .info .left img{display:block;width:100%;height:163px;}
+.detailPopup .info .left button{display:block;width:100%;height:38px;border-radius:3px;margin-top:10px;font-size:15px;color:#fff;text-align:left;padding-left:80px;line-height:38px;}
+.detailPopup .info .left .no{background-color:#1890ff;}
+.detailPopup .info .left .have{background-color:#ccc;}
+.detailPopup .info .left button:nth-of-type(1){background-image:url(../images/icon_1.png);background-repeat:no-repeat;background-position:45px center;}
+.detailPopup .info .left button:nth-of-type(2){background-image:url(../images/icon_2.png);background-repeat:no-repeat;background-position:45px center;}
+.detailPopup .info .left button:nth-of-type(3){background-image:url(../images/icon_3.png);background-repeat:no-repeat;background-position:45px center;}
+
+.detailPopup .info .center ul li,
+.detailPopup .info .right ul li{margin-bottom:25px;}
+.detailPopup .info .center ul li span,
+.detailPopup .info .right ul li span{display:inline-block;width:70px;text-align:right;vertical-align: middle;font-size:16px;color:#959595;}
+.detailPopup .info .center ul li input,
+.detailPopup .info .right ul li input{width:250px;height:32px;border:1px solid #ccc;border-radius:3px;background:#f2f2f2;font-size:14px;color:#000;line-height:30px;padding:0 10px;margin-left:20px;}
+
+.detailPopup .info .line{width:1px;height:280px;background:#eaeaea;margin:6px 29px 0 40px;}
+
+.detailPopup .page{position:absolute;bottom:35px;left:50%;transform:translateX(-50%); }
+.detailPopup .page a{display:inline-block;width:140px;height:40px;border-radius:3px;background:#1890ff;font-size:16px;color:#fff;text-align:center;line-height:40px;}
+.detailPopup .page span{margin:0 30px;font-size:20px;color:#000;}
+.detailPopup .page span i{font-style:inherit;}
+
+
+@media only screen and (max-width: 1366px) {
+
+    .content .box .btn input[type=text],
+    .content .box .btn input[type=submit]{height: 30px;font-size: 14px;}
+
+
+    .detailPopup .info{padding: 1.5rem 2rem 0;}
+
+    .detailPopup .info .center ul li,
+    .detailPopup .info .right ul li{margin-bottom: .8rem;}
+    .detailPopup .info .center ul li span,
+    .detailPopup .info .right ul li span{font-size: 14px;}
+
+    .detailPopup .info .left button{height: 35px;line-height: 35px;}
+    .detailPopup .page{bottom: 1.2rem;}
+    .detailPopup .page a{height: 30px;width: 100px;font: 14px/30px 'Microsoft YaHei';}
+
+    .card ul li{margin-bottom: .5rem;}
+
+    .detailPopup{height: 550px;}
+
+
+
+}

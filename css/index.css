@@ -1,0 +1,54 @@
+body{width:100%;height:100%;background:url(../images/bk_1.jpg)no-repeat top center/cover;}
+.content .top{position:relative;}
+.content .top .welcome{text-align:center;font-size:16px;color:#fff;padding-top:30px;}
+.content .top .welcome a{padding:0 5px;color:#fff;text-decoration: underline;}
+.content .top .change{position:absolute;width:auto;height:auto;right:0;top:28px;}
+.content .top .change a{width:46px;height:26px;border:1px solid #fff;background:#8092ff;display:inline-block;text-align:center;line-height:24px;font-size:16px;color:#fefefe;margin-left:6px;}
+/*分栏*/
+.content .tab{width:100%;height:660px;margin-top:45px;position:relative;}
+.content .tab .box{width:100%;height:90%;overflow:hidden;position:relative;}
+.content .tab .box .swiper-slide a{display:block;width:calc((100% - 402px)/7);height:auto;float:left;margin-right:67px;margin-bottom:30px;}
+.content .tab .box .swiper-slide a:nth-child(7n){margin-right:0;}
+.content .tab .box .swiper-slide a img{display:block;width: 80px;height: 80px;z-index: 1;position: relative;margin: auto;}
+.content .tab .box .swiper-slide a .img{width: 80px;position: relative;margin: auto;}
+.content .tab .box .swiper-slide a .img:after{content: ' ';position: absolute;left: 50%;bottom: 0;width: 70%;height: 0;box-shadow: 0 0 20px 8px rgba(0,0,0,.5);transform: translateX(-50%);border-radius: 50%;z-index: 0;}
+.content .tab .box .swiper-slide a span{display:block;font-size:16px;color:#fff;font-weight:bold;text-align:center;margin-top:10px;position: relative;z-index: 1;}
+/*圆点*/
+.content .tab .swiper-pagination{position:absolute;bottom:0;left:50%;transform:translateX(-50%);}
+.content .tab .swiper-pagination span{width:15px;height:15px;background:rgba(255,255,255,.4);border-radius:50%;float:left;margin-right:15px;opacity: 1;}
+.content .tab .swiper-pagination span:last-child{margin-right:0;}
+.content .tab .swiper-pagination span.swiper-pagination-bullet-active{background:#fff;}
+/*箭头*/
+.content .tab .arrow{display:block;width:64px;height:64px;position:absolute;top:40%;}
+.content .tab .l_arrow{left:-94px;background:#001f6d url("../images/l_arrow.png") no-repeat center;}
+.content .tab .r_arrow{right:-94px;background:#001f6d url("../images/r_arrow.png") no-repeat center;}
+
+
+
+@media only screen and (max-width: 1600px) {
+
+    .content .tab{height:500px;margin-bottom: 3rem;}
+
+
+}
+
+@media only screen and (max-width: 1366px) {
+
+    .content .tab{height:380px;}
+    .content .tab .box .swiper-slide a img{width: 70px;height: 70px;}
+    .content .tab .arrow{top:37.5%;}
+    .content .tab .l_arrow{left:-5%;}
+    .content .tab .r_arrow{right:-5%;}
+    .content .tab .swiper-pagination span{width: 12px;height: 12px;}
+
+
+
+
+
+
+
+
+
+
+
+}

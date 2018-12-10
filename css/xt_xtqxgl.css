@@ -1,0 +1,69 @@
+.content .box .btn{width:223px;height:40px;border:1px solid #bcbcbc;border-radius:3px;}
+.content .box .btn>div{width:auto;height:100%;border-right:1px solid #bcbcbc;}
+.content .box .btn>div:last-child{border-right:0;}
+.content .box .btn>div a{display:block;width:100%;height:100%;line-height:38px;padding-left:30px;text-align:left;font-size:14px;color:#000;}
+.content .box .btn>div:first-child a{background:url(../images/icon_add.png)no-repeat 13px center;padding-right:15px;}
+.content .box .btn>div:nth-child(2) a{background:url(../images/icon_pen.png)no-repeat 13px center;padding-right:15px;}
+.content .box .btn>div:nth-child(3) a{background:url(../images/icon_delete.png)no-repeat 13px center;padding-right:15px;}
+.content .box .btn>div a:hover{color: #fff;}
+.content .box .btn>div:first-child a:hover{background:#1890FF url(../images/icon_add_b.png)no-repeat 13px center;padding-right:15px;}
+.content .box .btn>div:nth-child(2) a:hover{background:#1890FF url(../images/icon_pen_b.png)no-repeat 13px center;padding-right:15px;}
+.content .box .btn>div:nth-child(3) a:hover{background:#1890FF url(../images/icon_delete_b.png)no-repeat 13px center;padding-right:15px;}
+
+
+.content .box .recording .list li>div{font-size:15px;color:#333;}
+.content .box .recording .id{width:65px;}
+.content .box .recording .x_name{width:130px;}
+.content .box .recording .img{width:75px;}
+.content .box .recording .type{width:85px;}
+.content .box .recording .sorting{width:100px;}
+.content .box .recording .url{width:160px;}
+.content .box .recording .coding{width:200px;}
+.content .box .recording .status{width:100px;}
+
+.content .box .recording .type a,.content .box .recording .status a{display:block;width:54px;height:30px;background:#1ab394;font-size:15px;color:#fff;text-align:center;line-height:30px;border-radius:3px;margin-top:10px;}
+
+
+.pop_ups{width:700px;height:auto;background:#fff;border-radius:3px;padding-bottom:20px;margin-left: -350px;}
+.pop_ups .pop_top{width:100%;height:51px;border-bottom:1px solid #ececec;line-height:50px;}
+.pop_ups .pop_top .name{font-size:16px;color:#333;font-weight:bold;margin-left:20px;}
+.pop_ups .pop_top .btn{display:block;float:right;width:16px;height:16px;background:url(../images/icon_close_1.png)no-repeat center/cover;margin:20px 20px 0 0;}
+
+.pop_ups .pop_center{padding-top:22px;}
+.pop_ups .pop_center ul li{width:100%;height:auto;margin-bottom:15px;}
+.pop_ups .pop_center ul li>div{float:left;}
+.pop_ups .pop_center ul li .manner{width:120px;height:34px;line-height:34px;text-align:right;margin-right:25px;font-size:16px;color:#333;}
+.pop_ups .pop_center ul li input[type=text]{width:500px;height:34px;border:1px solid #ccc;border-radius:3px;font-size:15px;color:#999;line-height:32px;padding-left:15px;}
+.pop_ups .pop_center ul li:first-child .select,
+.pop_ups .pop_center ul li:last-child .select{padding-top:8px;}
+.pop_ups .pop_center ul li .select input[type=radio]{width:14px;height:14px;vertical-align: middle;margin-right:10px;}
+.pop_ups .pop_center ul li .select label{font-size:15px;color:#333;margin-right:20px;}
+
+
+
+.pop_ups .pop_bottom{width:100%;height:auto;border-top:1px solid #e5e5e5;margin-top:45px;padding-top:20px;}
+.pop_ups .pop_bottom button{float:right;width:96px;height:36px;font-size:16px;color:#fff;letter-spacing:5px;text-align:center;line-height:36px;border-radius:3px;padding-left:5px;}
+.pop_ups .pop_bottom button:first-child{background:#1c84c6;margin:0 20px 0 15px;}
+.pop_ups .pop_bottom button:last-child{background:#c2c2c2;}
+
+
+
+@media only screen and (max-width: 1366px) {
+
+    .content .box .btn,
+    .content .box .btn>div a,
+    .content .box .btn .inquire input[type=text],
+    .content .box .btn .inquire input[type=submit]{height: 30px;line-height: 28px;font-size: 14px;}
+
+    .content .recording .list li>div{font-size: 14px;}
+    .content .box .recording .type a,
+    .content .box .recording .status a{margin-top: 3px;height: 28px;line-height: 28px;font-size: 14px;}
+
+
+    .pop_ups .pop_center ul li{margin-bottom: .6rem;}
+    .pop_ups .pop_center ul li .manner,
+    .pop_ups .pop_center ul li input[type=text]{height: 30px;line-height: 30px;font-size: 14px;}
+
+
+}
+

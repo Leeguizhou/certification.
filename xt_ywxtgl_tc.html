@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>系统_业务系统管理_弹窗</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/xt_jsgl_tc.css">
+    <link rel="stylesheet" href="css/xt_syyhlb_tc.css">
+    <style>
+        body{background:#005fe9;}
+        .pop_ups .pop_center ul li:nth-child(9) .select{padding-top:10px;}
+        .pop_ups .pop_center ul li:nth-child(9) .select input{width:18px;height:18px;appearance:none;-moz-appearance:none; -webkit-appearance:none;border:0;background:url(images/checked.png)no-repeat;margin-right:5px;vertical-align: middle;}
+        .pop_ups .pop_center ul li:nth-child(9) .select input[type=radio]:checked{ background:url(images/checkbox.png)no-repeat;}
+        .pop_ups .pop_center ul li:nth-child(9) .select label{margin-right:15px;}
+
+
+
+
+    </style>
+</head>
+<body>
+<div class="pop_ups">
+    <div class="clf pop_top">
+        <span class="name">添加应用</span>
+        <a href="#" class="btn"></a>
+    </div>
+    <form action="">
+        <div class="pop_center">
+            <ul>
+                <li class="clf">
+                    <div class="manner">应用名称</div>
+                    <div class="select">
+                        <input type="text" placeholder="请输入应用名称">
+                    </div>
+                </li>
+                <li class="clf">
+                    <div class="manner">应用key</div>
+                    <div class="select">
+                        <input type="text" placeholder="请输入应用key">
+                    </div>
+                </li>
+                <li class="clf">
+                    <div class="manner">应用公钥</div>
+                    <div class="select">
+                        <input type="text" placeholder="请输入应用公钥">
+                    </div>
+                </li>
+                <li class="clf">
+                    <div class="manner">回调地址</div>
+                    <div class="select">
+                        <input type="text" placeholder="请输入应用公钥">
+                    </div>
+                </li>
+                <li class="clf">
+                    <div class="manner">应用logo地址</div>
+                    <div class="select">
+                        <input type="text" placeholder="请输入应用logo地址">
+                    </div>
+                </li>
+                <li class="clf">
+                    <div class="manner">责任人</div>
+                    <div class="select">
+                        <input type="text" placeholder="请输入责任人">
+                    </div>
+                </li>
+                <li class="clf">
+                    <div class="manner">联系方式</div>
+                    <div class="clf select">
+                        <input type="text" class="fl" placeholder="请输入联系方式">
+                    </div>
+                </li>
+                <li class="clf">
+                    <div class="manner">部署IP</div>
+                    <div class="select">
+                        <input type="text" placeholder="请输入部署IP">
+                    </div>
+                </li>
+                <li class="clf">
+                    <div class="manner">采集方式</div>
+                    <div class="select">
+                        <input type="radio" name="radio1" checked="checked" id="f3"><label for="f3">声纹</label>
+                        <input type="radio" name="radio1" id="f4"><label for="f4">人脸</label>
+                        <input type="radio" name="radio1" id="f5"><label for="f5">指纹</label>
+                        <input type="radio" name="radio1" id="f6"><label for="f6">瞳孔</label>
+                    </div>
+                </li>
+                <li class="clf">
+                    <div class="manner">认证中心ID</div>
+                    <div class="select">
+                        <input type="text" placeholder="请输入认证中心ID">
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="clf pop_bottom">
+            <a href="#">提交</a>
+            <a href="#">关闭</a>
+        </div>
+    </form>
+
+
+</div>
+</body>
+</html>
